@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bsoyka
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bsoyka.github.io
+  * I am bsoyka (https://keybase.io/bsoyka) on keybase.
+  * I have a public key ASBOoz--OEiVMq4vsf4WHt4EfQczEX6oxso68fCFlDvwdgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204ea33fbe38489532ae2fb1fe161ede047d0733117ea8c6ca3af1f085943bf0760a",
+      "host": "keybase.io",
+      "kid": "01204ea33fbe38489532ae2fb1fe161ede047d0733117ea8c6ca3af1f085943bf0760a",
+      "uid": "5088611ecabcdedbd3543733a8aad719",
+      "username": "bsoyka"
+    },
+    "merkle_root": {
+      "ctime": 1566509721,
+      "hash": "09c7247797c61cd1f28897791c13c8dd2da16ef04820b31d2cfaa9e6b7a7a277f4fdb611cc723b44ddafa438e5dff59310a6534e603192238cbbc371f825bb36",
+      "hash_meta": "bb59d7a5ff3d2f5225db29dc3498acb54faf8e70e31e6be3c270bb53511f5a0c",
+      "seqno": 6077668
+    },
+    "service": {
+      "entropy": "Exg5vUx+a32I0mLH40CwvKlp",
+      "hostname": "bsoyka.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.3.2"
+  },
+  "ctime": 1566509734,
+  "expire_in": 504576000,
+  "prev": "4fe89503869cbe05d035fab15cdd239fbc3e49764d6ae3b16b98cda936be8789",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTqM/vjhIlTKuL7H+Fh7eBH0HMxF+qMbKOvHwhZQ78HYKp3BheWxvYWTESpcCBsQgT+iVA4acvgXQNfqxXN0jn7w+SXZNauOxa5jNqTa+h4nEIGHrAMmaA6v6GdUgSZS/s32uui0NQh1FrvRP15leihpOAgHCo3NpZ8RAEeNdAtJMGO+1TJb8uU4nhrtAZXjY7KIUkL1ZgCOMsXYZj9itvM7+y5E1S/y6I0rkLHlwFmDZoqV/h/OZwZlxBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFMt8VcrNbssKuiiS2g1mQQMqLW/0/b7ogKL9Fdk8qV0o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bsoyka
+
+==================================================================
