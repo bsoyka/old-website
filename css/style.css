@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
 @charset "utf-8";
 /*------------------------------------*\
     $RESET
@@ -76,7 +77,9 @@ textarea {
 html {
     background-color: #f6f9f9;
     color: #95a4a9;
-    font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 body {
     margin: 10%;
@@ -98,9 +101,10 @@ body {
 }
     .title {
         font-size: 48px;
-        font-weight: normal;
+        font-weight: 700;
         line-height: 1;
         color: #000000;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .social-icons li {
