@@ -12,6 +12,10 @@
         #social-icons-list i {
             padding-right: 10px;
         }
+        
+        .hr-thick {
+             border-top-width: 8px;
+        }
 
     </style>
 
@@ -92,24 +96,57 @@
                 </div>
             </div>
         </div>
+    </div>
+    <hr class="hr-thick my-5">
+    <div class="container">
+        <h1 class="text-center">Most Recent Stories</h1>
+        <h5 class="text-center text-muted pb-4">From Medium</h5>
+        <div class="card-columns" id="writingCols">
+            
+        </div>
+    </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/ca9c9fc58f.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script>
-            var typed = new Typed('#typingJob', {
-                strings: ["a <strong>writer</strong>", "a <strong>developer</strong>", "a <strong>student</strong>", "<strong>probably sleeping</strong>"],
-                typeSpeed: 40,
-                backSpeed: 30,
-                showCursor: false,
-                loop: true
-            });
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ca9c9fc58f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typingJob', {
+            strings: ["a <strong>writer</strong>", "a <strong>developer</strong>", "a <strong>student</strong>", "<strong>probably sleeping</strong>"],
+            typeSpeed: 40,
+            backSpeed: 30,
+            showCursor: false,
+            loop: true
+        });
 
-        </script>
+        //        https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40bsoyka
+        $.get({
+            url: 'https://api.rss2json.com/v1/api.json',
+            dataType: 'json',
+            data: {
+                rss_url: 'https://medium.com/feed/@bsoyka'
+            }
+        }).done(function(response) {
+            if (response.status != 'ok') {
+                throw response.message;
+            }
+
+            console.log('====== ' + response.feed.title + ' ======');
+
+            for (var i in response.items) {
+                var item = response.items[i];
+                if (item.categories.length > 0) {
+                    console.log(item);
+                    tag_badges = '<span class="badge badge-pill badge-light">' + item.categories.join('</span> <span class="badge badge-pill badge-light">') + '</span>';
+                    document.getElementById("writingCols").innerHTML += '<div class="card"><img src="' + item.thumbnail + '" class="card-img-top"><div class="card-body"><h5 class="card-title">' + item.title + '</h5><h6 class="card-subtitle">' + tag_badges + '</h6><br><a href="' + item.link + '" class="btn btn-primary stretched-link">Read now</a></div></div>';
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>
