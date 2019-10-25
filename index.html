@@ -8,16 +8,37 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #social-icons-list i {
+            padding-right: 10px;
+        }
+    </style>
 
-    <title>Hello, world!</title>
+    <title>Benjamin Soyka</title>
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid px-2">
         <div class="container">
-            <h1 class="display-4">Hey there! I'm <strong>Benjamin Soyka</strong>.</h1>
-            <h3 class="font-weight-lighter">I am...</h3>
-            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" alt="Avatar" class="rounded-circle mx-auto float-lg-right">
+                    <br><br>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h1 class="display-4">Hey there! I'm <strong>Benjamin Soyka</strong></h1>
+                    <h2 class="font-weight-lighter">I am a <strong><span id="typingJob"></span></strong></h2>
+                    <hr class="mt-4 mb-3">
+                    <div id="social-icons-list">
+                        <i class="fab fa-medium fa-2x"></i>
+                        <i class="fab fa-github fa-2x"></i>
+                        <i class="fab fa-stack-overflow fa-2x"></i>
+                        <i class="fab fa-keybase fa-2x"></i>
+                        <i class="fab fa-wikipedia-w fa-2x"></i>
+                        <i class="fab fa-goodreads fa-2x"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -26,6 +47,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ca9c9fc58f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typingJob', {
+            strings: ["writer", "developer", "student"],
+            typeSpeed: 40,
+            backSpeed: 30,
+            showCursor: false,
+            loop: true
+        });
+
+    </script>
 </body>
 
 </html>
