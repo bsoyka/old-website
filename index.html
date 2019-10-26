@@ -1,28 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M58WGDV');
 
-    </script>
-    <!-- End Google Tag Manager -->
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
-		
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="/favicon.ico">
 		
 		<link rel="apple-touch-icon" href="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=256">
@@ -32,53 +14,162 @@
 		<meta name=apple-mobile-web-app-status-bar-style content=black>
 		<meta name=apple-mobile-web-app-title content="B. Soyka">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #social-icons-list a {
+            padding-right: 10px;
+            color: black;
+        }
+
+        #social-icons-list a:hover {
+            color: dimgray;
+        }
+
+        .hr-thick {
+            border-top-width: 8px;
+        }
+
+    </style>
+
     <title>Benjamin Soyka</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 </head>
 
-<body class="animated bounceInDown">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M58WGDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div class="avatar">
-        <img src="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" alt="Avatar">
+<body>
+    <div class="jumbotron jumbotron-fluid px-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" alt="Avatar" class="rounded-circle mx-auto float-lg-right">
+                    <br><br>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h1 class="display-4">Hey there! I'm <strong>Benjamin Soyka</strong></h1>
+                    <h2 class="font-weight-lighter">I am <span id="typingJob"></span></h2>
+                    <hr class="mt-4 mb-3">
+                    <div id="social-icons-list">
+                        <a href="https://medium.com/@bsoyka" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
+                        <a href="https://github.com/bsoyka" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://stackoverflow.com/users/9549259/benjamin-soyka" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
+                        <a href="https://keybase.io/bsoyka" target="_blank"><i class="fab fa-keybase fa-2x"></i></a>
+                        <a href="https://en.wikipedia.org/wiki/User:Bsoyka" target="_blank"><i class="fab fa-wikipedia-w fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="content">
-        <h1 class="title">Benjamin<br>Soyka</h1>
-
-        <p style="font-size: 125%;">
-            A curious, technology-loving student writing random stories whenever they feel like it (and sleeping whenever they don’t)
-        </p>
-
-        <ul class="social-icons">
-            <li><a class="medium" href="https://medium.com/@bsoyka" title="Medium">Medium</a></li>
-            <li><a class="github" href="https://github.com/bsoyka" title="GitHub">GitHub</a></li>
-        </ul>
-
-        <p>
-            Editor for <a href="https://medium.com/why-is-that/@bsoyka">Why&nbsp;Is&nbsp;That?</a>, <a href="https://medium.com/21st/@bsoyka">21<sup>st</sup></a>, and <a href="https://medium.com/tech-reviews/@bsoyka">Tech&nbsp;Reviews</a>
-        </p>
-        
-        <p>
-            Writer for <a href="https://writingcooperative.com/@bsoyka">The&nbsp;Writing&nbsp;Cooperative</a>, <a href="https://medium.com/better-programming/@bsoyka">Better&nbsp;Programming</a>, <a href="https://medium.com/afwp/@bsoyka">a&nbsp;Few&nbsp;Words</a>, <a href="https://medium.com/1-minute-reads/@bsoyka">1&nbsp;Minute&nbsp;Reads</a>, and <a href="https://medium.com/101-world/@bsoyka">101&nbsp;World</a>
-        </p>
-        
-        <p>
-            Middle school student
-        </p>
-        
-        <p>
-            Moderator for <a href="https://brainly.com/">Brainly.com</a>
-        </p>
+    <div class="container">
+        <h1 class="text-center pb-4">What I Do</h1>
+        <div class="card-columns">
+            <div class="card">
+                <img src="img/office-620817.jpg" alt="Person writing in notebook" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Writer on Medium</h5>
+                    <p class="card-text">I'm a writer for <a href="https://writingcooperative.com/@bsoyka">The&nbsp;Writing&nbsp;Cooperative</a>, <a href="https://medium.com/better-programming/@bsoyka">Better&nbsp;Programming</a>, <a href="https://medium.com/afwp/@bsoyka">a&nbsp;Few&nbsp;Words</a>, <a href="https://medium.com/1-minute-reads/@bsoyka">1&nbsp;Minute&nbsp;Reads</a>, and <a href="https://medium.com/101-world/@bsoyka">101&nbsp;World</a>.</p>
+                    <p class="card-text">I enjoy writing about self-improvement, life lessons, technology, and so much more.</p>
+                    <a href="https://medium.com/@bsoyka" class="btn btn-primary" target="_blank">See my work on Medium</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/wordpress-265132.jpg" alt="Publishing a post" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Editor on Medium</h5>
+                    <p class="card-text">I'm an editor for <a href="https://medium.com/why-is-that/@bsoyka">Why&nbsp;Is&nbsp;That?</a>, <a href="https://medium.com/21st/@bsoyka">21<sup>st</sup></a>, and <a href="https://medium.com/tech-reviews/@bsoyka">Tech&nbsp;Reviews</a>.</p>
+                    <a href="https://medium.com/@bsoyka" class="btn btn-primary" target="_blank">See my Medium profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/code-1839406.jpg" alt="Computer showing code" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Developer</h5>
+                    <p class="card-text">I am both a web developer and a software developer. I have experience with Python, HTML, JavaScript, and <em>little</em> bit of CSS.</p>
+                    <a href="https://github.com/bsoyka" class="btn btn-primary" target="_blank">See my code on GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/journal-2850091.jpg" alt="Blank notebook" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Student</h5>
+                    <p class="card-text">I'm currently a middle school student. At any given moment, I'm probably stressing about assignments and due dates.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/brainly.png" alt="Brainly" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Brainly Moderator</h5>
+                    <p class="card-text">I like to spend my time working with a wonderful community of people while moderating one of the largest online learning communities in the world.</p>
+                    <a href="https://brainly.com/profile/bsoyka-13888565" target="_blank" class="btn btn-primary">View my Brainly profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Photographer</h5>
+                    <p class="card-text">Even though I'm still learning and practicing, I enjoy photography in my free time.</p>
+                    <a href="https://unsplash.com/@bsoyka" class="btn btn-primary" target="_blank">See my photos on Unsplash</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Graphic designer</h5>
+                    <p class="card-text">Sometimes I enjoy doing a little bit of graphic design. Usually the designs I make are pretty basic, but I'm proud of them.</p>
+                    <button class="btn btn-primary" disabled>See my designs on Shutterstock</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <hr class="hr-thick my-5">
+    <div class="container">
+        <h1 class="text-center">Most Recent Stories</h1>
+        <h5 class="text-center text-muted pb-4">From Medium</h5>
+        <div class="card-columns" id="writingCols"></div>
+    </div>
+    <footer class="footer mt-auto py-3 border-top border-light">
+        <div class="container">
+            <span class="text-muted"><a href="https://github.com/bsoyka/bsoyka.github.io"><i class="fas fa-code"></i></a> made with <i class="fas fa-heart text-danger"></i> and procrastination</span>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ca9c9fc58f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typingJob', {
+            strings: ["a <strong>writer</strong>", "a <strong>developer</strong>", "a <strong>student</strong>", "<strong>probably sleeping</strong>"],
+            typeSpeed: 40,
+            backSpeed: 30,
+            showCursor: false,
+            loop: true
+        });
+
+        //        https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40bsoyka
+        $.get({
+            url: 'https://api.rss2json.com/v1/api.json',
+            dataType: 'json',
+            data: {
+                rss_url: 'https://medium.com/feed/@bsoyka'
+            }
+        }).done(function(response) {
+            if (response.status != 'ok') {
+                throw response.message;
+            }
+
+            console.log('====== ' + response.feed.title + ' ======');
+
+            for (var i in response.items) {
+                var item = response.items[i];
+                if (item.categories.length > 0) {
+                    console.log(item);
+                    tag_badges = '<span class="badge badge-pill badge-light">' + item.categories.join('</span> <span class="badge badge-pill badge-light">') + '</span>';
+                    document.getElementById("writingCols").innerHTML += '<div class="card"><img src="' + item.thumbnail + '" class="card-img-top"><div class="card-body"><h5 class="card-title">' + item.title + '</h5><h6 class="card-subtitle">' + tag_badges + '</h6><br><a href="' + item.link + '" class="btn btn-primary stretched-link" target="_blank">Read now</a></div></div>';
+                }
+            }
+        });
+
+    </script>
 </body>
+
 </html>
