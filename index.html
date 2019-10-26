@@ -9,8 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        #social-icons-list i {
+        #social-icons-list a {
             padding-right: 10px;
+            color: black;
+        }
+        
+        #social-icons-list a:hover {
+            color: dimgray;
         }
         
         .hr-thick {
@@ -35,12 +40,11 @@
                     <h2 class="font-weight-lighter">I am <span id="typingJob"></span></h2>
                     <hr class="mt-4 mb-3">
                     <div id="social-icons-list">
-                        <i class="fab fa-medium fa-2x"></i>
-                        <i class="fab fa-github fa-2x"></i>
-                        <i class="fab fa-stack-overflow fa-2x"></i>
-                        <i class="fab fa-keybase fa-2x"></i>
-                        <i class="fab fa-wikipedia-w fa-2x"></i>
-                        <i class="fab fa-goodreads fa-2x"></i>
+                        <a href="https://medium.com/@bsoyka" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
+                        <a href="https://github.com/bsoyka" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://stackoverflow.com/users/9549259/benjamin-soyka" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
+                        <a href="https://keybase.io/bsoyka" target="_blank"><i class="fab fa-keybase fa-2x"></i></a>
+                        <a href="https://en.wikipedia.org/wiki/User:Bsoyka" target="_blank"><i class="fab fa-wikipedia-w fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -55,7 +59,7 @@
                     <h5 class="card-title">Writer on Medium</h5>
                     <p class="card-text">I'm a writer for <a href="https://writingcooperative.com/@bsoyka">The&nbsp;Writing&nbsp;Cooperative</a>, <a href="https://medium.com/better-programming/@bsoyka">Better&nbsp;Programming</a>, <a href="https://medium.com/afwp/@bsoyka">a&nbsp;Few&nbsp;Words</a>, <a href="https://medium.com/1-minute-reads/@bsoyka">1&nbsp;Minute&nbsp;Reads</a>, and <a href="https://medium.com/101-world/@bsoyka">101&nbsp;World</a>.</p>
                     <p class="card-text">I enjoy writing about self-improvement, life lessons, technology, and so much more.</p>
-                    <a href="https://medium.com/@bsoyka" class="btn btn-primary">See my work on Medium</a>
+                    <a href="https://medium.com/@bsoyka" class="btn btn-primary" target="_blank">See my work on Medium</a>
                 </div>
             </div>
             <div class="card">
@@ -63,7 +67,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Editor on Medium</h5>
                     <p class="card-text">I'm an editor for <a href="https://medium.com/why-is-that/@bsoyka">Why&nbsp;Is&nbsp;That?</a>, <a href="https://medium.com/21st/@bsoyka">21<sup>st</sup></a>, and <a href="https://medium.com/tech-reviews/@bsoyka">Tech&nbsp;Reviews</a>.</p>
-                    <a href="https://medium.com/@bsoyka" class="btn btn-primary">See my Medium profile</a>
+                    <a href="https://medium.com/@bsoyka" class="btn btn-primary" target="_blank">See my Medium profile</a>
                 </div>
             </div>
             <div class="card">
@@ -71,7 +75,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Developer</h5>
                     <p class="card-text">I am both a web developer and a software developer. I have experience with Python, HTML, JavaScript, and <em>little</em> bit of CSS.</p>
-                    <a href="https://github.com/bsoyka" class="btn btn-primary">See my code on GitHub</a>
+                    <a href="https://github.com/bsoyka" class="btn btn-primary" target="_blank">See my code on GitHub</a>
                 </div>
             </div>
             <div class="card">
@@ -82,10 +86,18 @@
                 </div>
             </div>
             <div class="card">
+                <img src="img/brainly.png" alt="Brainly" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Brainly Moderator</h5>
+                    <p class="card-text">I like to spend my time working with a wonderful community of people while moderating one of the largest online learning communities in the world.</p>
+                    <a href="https://brainly.com/profile/bsoyka-13888565" target="_blank" class="btn btn-primary">View my Brainly profile</a>
+                </div>
+            </div>
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Photographer</h5>
                     <p class="card-text">Even though I'm still learning and practicing, I enjoy photography in my free time.</p>
-                    <a href="https://unsplash.com/@bsoyka" class="btn btn-primary">See my photos on Unsplash</a>
+                    <a href="https://unsplash.com/@bsoyka" class="btn btn-primary" target="_blank">See my photos on Unsplash</a>
                 </div>
             </div>
             <div class="card">
@@ -141,7 +153,7 @@
                 if (item.categories.length > 0) {
                     console.log(item);
                     tag_badges = '<span class="badge badge-pill badge-light">' + item.categories.join('</span> <span class="badge badge-pill badge-light">') + '</span>';
-                    document.getElementById("writingCols").innerHTML += '<div class="card"><img src="' + item.thumbnail + '" class="card-img-top"><div class="card-body"><h5 class="card-title">' + item.title + '</h5><h6 class="card-subtitle">' + tag_badges + '</h6><br><a href="' + item.link + '" class="btn btn-primary stretched-link">Read now</a></div></div>';
+                    document.getElementById("writingCols").innerHTML += '<div class="card"><img src="' + item.thumbnail + '" class="card-img-top"><div class="card-body"><h5 class="card-title">' + item.title + '</h5><h6 class="card-subtitle">' + tag_badges + '</h6><br><a href="' + item.link + '" class="btn btn-primary stretched-link" target="_blank">Read now</a></div></div>';
                 }
             }
         });
