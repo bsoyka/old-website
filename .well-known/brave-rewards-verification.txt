@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: bsoyka.github.io 
+Domain: bsoyka.github.io
 Token: 61dffb5109042488b15ae2a743a9b3354c6f9266de939608f6ef1798e4a80d44
