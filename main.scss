@@ -1,11 +1,17 @@
+$light-background: #fff;
+$dark-background: #2e2e2e;
+$social-icons-dark: #000;
+$social-icons-light: #fff;
+$social-icons-hover: mix($social-icons-dark, $social-icons-light, 50%);
+
 #social-icons-list {
     a {
         padding-right: 10px;
-        color: black;
+        color: $social-icons-dark;
     }
 
     a:hover {
-        color: dimgray;
+        color: $social-icons-hover;
     }
 }
 
@@ -15,4 +21,32 @@
 
 .link-muted {
     color: lightgray;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-background;
+        color: #fff;
+    }
+
+    .jumbotron {
+        background-color: darken($dark-background, 10%);
+    }
+
+    .card {
+        color: #000;
+        background-color: darken(#fff, 10%);
+
+        img {
+            filter: brightness(90%);
+        }
+    }
+
+    #social-icons-list a {
+        color: $social-icons-light;
+    }
+
+    footer {
+        background-color: darken($dark-background, 10%);
+    }
 }
