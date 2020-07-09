@@ -1,8 +1,10 @@
-$primary: rgba(52, 9, 172, 1);
+$primary: rgb(52, 9, 172);
+$light-primary: rgb(55, 126, 230);
 
 @import "../bootstrap/scss/bootstrap";
 
-$gradient-bg: linear-gradient(138deg, $primary 20%, rgba(55, 126, 230, 1) 100%);
+$gradient-bg: linear-gradient(138deg, $primary 20%, $light-primary 100%);
+$darkened-bg: linear-gradient(138deg, darken($primary, 10) 20%, darken($light-primary, 10) 100%);
 $body-bg: $gray-300;
 
 body {
@@ -13,6 +15,10 @@ body {
 .btn-primary {
     background: $gradient-bg;
     border: none;
+
+    &:hover {
+        background: $darkened-bg;
+    }
 }
 
 .container,
