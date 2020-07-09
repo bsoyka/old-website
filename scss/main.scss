@@ -1,0 +1,85 @@
+$primary: rgba(52, 9, 172, 1);
+
+@import "../bootstrap/scss/bootstrap";
+
+$gradient-bg: linear-gradient(138deg, $primary 20%, rgba(55, 126, 230, 1) 100%);
+$body-bg: $gray-300;
+
+body {
+    background-color: $body-bg;
+    color: color-contrast($body-bg);
+}
+
+.btn-primary {
+    background: $gradient-bg;
+    border: none;
+}
+
+.container,
+.container-fluid {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &.top {
+        background: $gradient-bg;
+        color: color-contrast($primary);
+
+        .top-left {
+            text-align: center;
+            padding: 1.5rem;
+
+            * {
+                @extend .mx-auto;
+            }
+
+            #avatar {
+                @extend .rounded-circle;
+            }
+        }
+
+        .top-right {
+            padding: 1.5rem;
+
+            h5 {
+                margin-bottom: 1.2em;
+            }
+
+            .item {
+                margin-bottom: 10px;
+                font-size: 125%;
+
+                &::before {
+                    content: "-  ";
+                    color: $gray-600;
+                    @extend .font-weight-bold;
+                }
+
+                img {
+                    height: 1.2em;
+                }
+
+                a {
+                    @extend .text-reset;
+
+                    transition: opacity 0.2s ease-out;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        #avatar {
+            width: 60%;
+        }
+
+        .row {
+            margin-right: 0;
+        }
+
+        .alert {
+            opacity: 75%;
+        }
+    }
+}
