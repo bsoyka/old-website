@@ -1,91 +1,55 @@
-$primary: rgb(52, 9, 172);
-$light-primary: rgb(55, 126, 230);
+@charset "utf-8";
 
-@import "../bootstrap/scss/bootstrap";
+$purple: rgb(52, 9, 172);
+$blue: rgb(55, 126, 230);
 
-$gradient-bg: linear-gradient(138deg, $primary 20%, $light-primary 100%);
-$darkened-bg: linear-gradient(138deg, darken($primary, 10) 20%, darken($light-primary, 10) 100%);
-$body-bg: $gray-300;
+$primary: $purple;
+$dimensions: 16 24 32 48 64 96 200; // Replace 128 with 200 for the avatar
 
-body {
-    background-color: $body-bg;
-    color: color-contrast($body-bg);
+@import "../bulma/bulma";
+
+.is-horizontal-center {
+    justify-content: center;
 }
 
-.btn-primary {
-    background: $gradient-bg;
-    border: none;
+.top {
+    background: linear-gradient(138deg, $purple 20%, $blue 100%);
 
-    &:hover {
-        background: $darkened-bg;
+    padding: 35px;
+
+    color: white;
+
+    h1,
+    h4,
+    a {
+        color: white;
     }
-}
 
-.container,
-.container-fluid {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    #avatar {
+        width: 200px;
+        height: 200px;
+    }
 
-    &.top {
-        background: $gradient-bg;
-        color: color-contrast($primary);
-
-        .top-left {
-            text-align: center;
-            padding: 1.5rem;
-
-            * {
-                @extend .mx-auto;
-            }
-
-            #avatar {
-                @extend .rounded-circle;
-            }
+    .item {
+        margin-bottom: 10px;
+        font-size: 125%;
+    
+        &::before {
+            content: "-  ";
+            color: $grey-light;
+            font-weight: bold;
         }
-
-        .top-right {
-            padding: 1.5rem;
-
-            h5 {
-                margin-bottom: 1.2em;
+    
+        img {
+            height: 1.2em;
+        }
+    
+        a {
+            transition: opacity 0.2s ease-out;
+    
+            &:hover {
+                opacity: 0.5;
             }
-
-            .item {
-                margin-bottom: 10px;
-                font-size: 125%;
-
-                &::before {
-                    content: "-  ";
-                    color: $gray-600;
-                    @extend .font-weight-bold;
-                }
-
-                img {
-                    height: 1.2em;
-                }
-
-                a {
-                    @extend .text-reset;
-
-                    transition: opacity 0.2s ease-out;
-
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                }
-            }
-        }
-
-        #avatar {
-            width: 60%;
-        }
-
-        .row {
-            margin-right: 0;
-        }
-
-        .alert {
-            opacity: 75%;
         }
     }
 }
