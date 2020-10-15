@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-$purple: rgb(52, 9, 172);
-$blue: rgb(55, 126, 230);
+$primary: #0b369b;
+$secondary: #066b9d;
 
-$primary: $purple;
 $dimensions: 16 24 32 48 64 96 200; // Replace 128 with 200 for the avatar
 
 @import "../bulma/bulma";
@@ -13,7 +12,7 @@ $dimensions: 16 24 32 48 64 96 200; // Replace 128 with 200 for the avatar
 }
 
 .top {
-    background: linear-gradient(138deg, $purple 20%, $blue 100%);
+    background: linear-gradient(138deg, $primary 20%, $secondary 100%);
 
     padding: 35px;
 
