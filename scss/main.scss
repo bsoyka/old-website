@@ -18,6 +18,18 @@ $dimensions: 16 24 32 48 64 96 200; // Replace 128 with 200 for the avatar
 
     color: white;
 
+    .switch-locale {
+        display: flex;
+        justify-content: flex-end;
+
+        li a img {
+            height: 1.7em;
+            margin-left: 0.4em;
+            border-radius: 20%;
+            border: 0.1em solid $secondary;
+        }
+    }
+
     h1,
     h4,
     a {
@@ -32,20 +44,20 @@ $dimensions: 16 24 32 48 64 96 200; // Replace 128 with 200 for the avatar
     .item {
         margin-bottom: 10px;
         font-size: 125%;
-    
+
         &::before {
             content: "-  ";
             color: $grey-light;
             font-weight: bold;
         }
-    
+
         img {
             height: 1.2em;
         }
-    
+
         a {
             transition: opacity 0.2s ease-out;
-    
+
             &:hover {
                 opacity: 0.5;
             }

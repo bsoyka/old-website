@@ -14,7 +14,8 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M58WGDV');
     </script>
 
-    <meta name="description" content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
+    <meta name="description"
+        content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
     <meta name="theme-color" content="#3409ac">
     <meta name="robots" content="index, follow">
 
@@ -22,7 +23,8 @@
     <meta name="og:type" content="website">
     <meta name="og:url" content="https://bsoyka.me">
     <meta name="og:image" content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200">
-    <meta name="og:description" content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
+    <meta name="og:description"
+        content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,36 +32,6 @@
 
     <!-- Compiled from scss/main.scss -->
     <link rel="stylesheet" href="css/main.min.css">
-
-    <script>
-        //some default pre init
-        var PB = PB || {};PB.q = PB.q || [];PB.events = PB.events || [];
-        
-        //PushBots ApplicationId (required)
-        PB.app_id = "5f4be7e8f3a0ab621b5073c4";
-        //Your domain name, must be HTTPS or localhost  (required)
-        PB.domain = "https://bsoyka.me";
-        //Update and uncomment it if you are using custom safari certificate for your app
-        PB.safari_push_id = "web.com.pushbots.safaripush";
-        //****************************************
-        
-        PB.logging_enabled = true;
-        PB.auto_subscribe = true;
-        
-        //Custom worker and manifest URL
-        //PB.worker_url = PB.domain + "/pushbots-worker.js";
-        
-        //Welcome notification message
-        PB.welcome = {title:"Welcome ",message:"Thanks for subscribing!", url :PB.domain};
-        
-        function sendNotification(){
-              PB.register();
-              PB.q.push(["sendNotification", {title:"Hey ",message:"Why not?", url :"https://bsoyka.me"}]);
-        }
-        
-        </script>
-        
-        <script src="//cdn.pushbots.com/js/sdk.min.js" type="text/javascript" onload="PB.init()" async></script>
 </head>
 
 <body>
@@ -70,7 +42,15 @@
     </noscript>
 
     <div class="container-fluid top">
-        <h1 class="title has-text-weight-bold is-size-1 has-text-centered my-5">Hey&nbsp;there, I'm Ben&nbsp;Soyka!</h1>
+        <ul class="switch-locale">
+            <li><a href="#" class="lang-switch" data-locale="zh"><img src="img/cn.svg" alt="Chinese"></a></li>
+            <li><a href="#" class="lang-switch" data-locale="en"><img src="img/gb.svg" alt="English"></a></li>
+            <li><a href="#" class="lang-switch" data-locale="fr"><img src="img/fr.svg" alt="French"></a></li>
+            <li><a href="#" class="lang-switch" data-locale="de"><img src="img/de.svg" alt="German"></a></li>
+            <li><a href="#" class="lang-switch" data-locale="es"><img src="img/es.svg" alt="Spanish"></a></li>
+        </ul>
+
+        <h1 class="title has-text-weight-bold is-size-1 has-text-centered my-5" data-i18n="hey-there"></h1>
 
         <div class="columns is-centered">
             <div class="column is-one-third">
@@ -82,18 +62,19 @@
             </div>
 
             <div class="column is-half">
-                <h4 class="subtitle is-5">I'm a high-school freshman with too much spare time on my hands.</h4>
-                <div class="item">Writer on&nbsp;<a href="https://medium.com/@bsoyka" target="_blank"><i
-                            class="fab fa-medium"></i></a>
+                <h4 class="subtitle is-5" data-i18n="intro"></h4>
+                <div class="item"><span data-i18n="writer-on"></span> <a href="https://medium.com/@bsoyka"
+                        target="_blank"><i class="fab fa-medium"></i></a>
                 </div>
-                <div class="item">Developer on&nbsp;<a href="https://github.com/bsoyka" target="_blank"><i
-                            class="fab fa-github"></i></a>&nbsp;<a
+                <div class="item"><span data-i18n="developer-on"></span> <a href="https://github.com/bsoyka"
+                        target="_blank"><i class="fab fa-github"></i></a>&nbsp;<a
                         href="https://stackoverflow.com/users/9549259/ben-soyka" target="_blank"><i
                             class="fab fa-stack-overflow"></i></a></div>
-                <div class="item">Moderator on&nbsp;<a href="https://brainly.com/profile/bsoyka-13888565"
-                        target="_blank"><img src="img/brainly.svg" alt="Brainly"></a></div>
-                <div class="item">Photographer on&nbsp;<a href="https://unsplash.com/@bsoyka" target="_blank"><i
-                            class="fab fa-unsplash"></i></a></div>
+                <div class="item"><span data-i18n="moderator-on"></span> <a
+                        href="https://brainly.com/profile/bsoyka-13888565" target="_blank"><img src="img/brainly.svg"
+                            alt="Brainly"></a></div>
+                <div class="item"><span data-i18n="photographer-on"></span> <a href="https://unsplash.com/@bsoyka"
+                        target="_blank"><i class="fab fa-unsplash"></i></a></div>
             </div>
         </div>
 
@@ -101,29 +82,23 @@
 
         <article class="message is-danger" d="psa-covid">
             <div class="message-header">
-                <p><i class="fas fa-bullhorn"></i> Public Service Announcement</p>
+                <p><i class="fas fa-bullhorn"></i> <span data-i18n="public-service-announcement"></span></p>
             </div>
             <div class="message-body">
-                <p>
-                    Make sure to do these <strong>5 simple things</strong> to help stop the spread of COVID-19: <i
-                        class="fas fa-viruses"></i>
-                </p>
+                <p><span data-i18n="covid-psa-1"></span> <i class="fas fa-viruses"></i></p>
 
                 <br>
 
-                <p>Stay 6 feet away from others. <i class="fas fa-people-arrows"></i></p>
-                <p>Stay home as much as possible, especially if you feel sick. <i class="fas fa-laptop-house"></i>
-                <p>Wash your hands often for at least 20 seconds. <i class="fas fa-hands-wash"></i> <i
+                <p><span data-i18n="covid-psa-2"></span> <i class="fas fa-people-arrows"></i></p>
+                <p><span data-i18n="covid-psa-3"></span> <i class="fas fa-laptop-house"></i>
+                <p><span data-i18n="covid-psa-4"></span> <i class="fas fa-hands-wash"></i> <i
                         class="fas fa-stopwatch-20"></i></p>
-                <p>Cough and sneeze into your elbow. <i class="fas fa-head-side-cough-slash"></i></p>
-                <p>Don't touch your face. <i class="fas fa-head-side-mask"></i></p>
+                <p><span data-i18n="covid-psa-5"></span> <i class="fas fa-head-side-cough-slash"></i></p>
+                <p><span data-i18n="covid-psa-6"></span> <i class="fas fa-head-side-mask"></i></p>
 
                 <br>
 
-                <p>
-                    Visit <a href="https://www.coronavirus.gov/" target="_blank">coronavirus.gov</a> for more
-                    information.
-                </p>
+                <p><a href="https://www.coronavirus.gov/" target="_blank" data-i18n="click-more-info"></a></p>
             </div>
         </article>
     </div>
@@ -131,10 +106,10 @@
     <hr>
 
     <div class="container has-text-centered">
-        <h1 class="title is-3">Join my mailing list!</h1>
-        <p class="subtitle is-5">Subscribe to get updates on all my latest and future projects.</p>
+        <h1 class="title is-3" data-i18n="mailing-list-title"></h1>
+        <p class="subtitle is-5" data-i18n="mailing-list-subtitle"></p>
         <a href="https://bsoyka.us16.list-manage.com/subscribe?u=42de34ca620a386b20064a62b&id=43c89756dc"
-            class="button is-primary is-medium" target="_blank">I want in!</a>
+            class="button is-primary is-medium" target="_blank" data-i18n="mailing-list-link"></a>
 
         <br><br>
 
@@ -150,8 +125,10 @@
 
     <section class="section">
         <div class="container has-text-centered">
-            <h1 class="title">Most Popular Stories</h1>
-            <p class="subtitle">From <a href="https://bsoyka.medium.com" target="_blank">Medium</a> (<a href="https://bsoyka.medium.com/follow">Follow me!</a>)</p>
+            <h1 class="title" data-i18n="popular-title"></h1>
+            <p class="subtitle"><span data-i18n="from"></span> <a href="https://bsoyka.medium.com"
+                    target="_blank">Medium</a> (<a href="https://bsoyka.medium.com/follow" data-i18n="follow-me"></a>)
+            </p>
         </div>
 
         <br>
@@ -173,8 +150,8 @@
                         </div>
                         <footer class="card-footer">
                             <a href="https://medium.com/better-programming/4-new-github-products-that-will-change-how-you-code-27933401faa0?source=friends_link&sk=d298a554ccb7d9c5d5c6bd8f48a9d777"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white">Read
-                                now</a>
+                                target="_blank" class="card-footer-item has-background-primary has-text-white"
+                                data-i18n="read-now"></a>
                             <a href="https://medium.com/better-programming" target="_blank"
                                 class="card-footer-item has-background-primary-light">Better Programming</a>
                         </footer>
@@ -195,8 +172,8 @@
                         </div>
                         <footer class="card-footer">
                             <a href="https://bsoyka.medium.com/4-ways-technology-has-changed-our-lives-for-the-better-c2cb4cc8da87?sk=2308d876705dc0e0c2b85070d50553fb"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white">Read
-                                now</a>
+                                target="_blank" class="card-footer-item has-background-primary has-text-white"
+                                data-i18n="read-now"></a>
                         </footer>
                     </div>
                 </div>
@@ -215,8 +192,8 @@
                         </div>
                         <footer class="card-footer">
                             <a href="https://medium.com/better-programming/how-to-build-a-simple-magic-8-ball-in-python-29335954d9f2?source=friends_link&sk=a457f1252d780b7ba30c6eaed63b6009"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white">Read
-                                now</a>
+                                target="_blank" class="card-footer-item has-background-primary has-text-white"
+                                data-i18n="read-now"></a>
                             <a href="https://medium.com/better-programming" target="_blank"
                                 class="card-footer-item has-background-primary-light">Better Programming</a>
                         </footer>
@@ -228,16 +205,15 @@
 
     <footer class="footer">
         <div class="container has-text-centered has-text-weight-semibold">
-            <p>
-                <a href="https://github.com/bsoyka/bsoyka.github.io" target="_blank"><i class="fas fa-code"></i></a>
-                with <i class="fas fa-clock has-text-success"></i> and <i class="fas fa-heart has-text-danger"></i>
+            <p><a href="https://github.com/bsoyka/bsoyka.github.io" target="_blank"><i class="fas fa-code"></i></a>
+                <span data-i18n="with"></span> <i class="fas fa-clock has-text-success"></i> <span
+                    data-i18n="and"></span> <i class="fas fa-heart has-text-danger"></i>
             </p>
 
             <br>
 
-            <p>
-                <a href="LICENSE" target="_blank">GPL-3.0 License</a>
-            </p>
+            <p><a href="LICENSE" target="_blank">GPL-3.0 <span data-i18n="license"></span></a></p>
+            <p><a href="https://poeditor.com/join/project?hash=WriDf8seUX" data-i18n="contribute-translations"></a></p>
         </div>
     </footer>
 
@@ -246,6 +222,38 @@
 
     <!-- Chat -->
     <script src="https://code.tidio.co/7jbxbcfvrv6t29agbu2najvi1qqsbt8t.js" async></script>
+
+    <!-- Localization -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="js/CLDRPluralRuleParser.js"></script>
+    <script src="js/jquery.i18n.js"></script>
+    <script src="js/jquery.i18n.messagestore.js"></script>
+    <script src="js/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jquery.i18n.language.js"></script>
+    <script src="js/jquery.i18n.parser.js"></script>
+    <script src="js/jquery.i18n.emitter.js"></script>
+    <script src="js/jquery.i18n.emitter.bidi.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.i18n().load({
+                de: "locales/de.json",
+                en: "locales/en.json",
+                es: "locales/es.json",
+                zh: "locales/zh.json",
+                fr: "locales/fr.json"
+            }).done(function () {
+                $("body").i18n();
+
+                $(".switch-locale").on("click", "a", function (e) {
+                    e.preventDefault();
+                    $.i18n().locale = $(this).data("locale");
+                    $("body").i18n();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
