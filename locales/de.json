@@ -1,27 +1,5 @@
 {
-    "hey-there": "Hallo, mein Name ist Ben Soyka",
-    "intro": "Ich bin ein High-School-Neuling mit zu viel Freizeit.",
-    "writer-on": "",
-    "developer-on": "",
-    "moderator-on": "",
-    "photographer-on": "",
-    "public-service-announcement": "",
-    "covid-psa-1": "",
-    "covid-psa-2": "",
-    "covid-psa-3": "",
-    "covid-psa-4": "",
-    "covid-psa-5": "",
-    "covid-psa-6": "",
-    "click-more-info": "",
-    "mailing-list-title": "",
-    "mailing-list-subtitle": "",
-    "mailing-list-link": "",
-    "popular-title": "",
-    "from": "",
-    "follow-me": "",
-    "with": "",
-    "and": "",
-    "license": "",
-    "read-now": "",
-    "contribute-translations": ""
+    "The very first line of the website": {
+        "hey-there": "Hallo, mein Name ist Ben Soyka"
+    }
 }
