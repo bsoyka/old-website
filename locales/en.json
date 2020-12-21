@@ -8,14 +8,8 @@
     "**From** Medium\" (used as in \"Source:\")": {
         "from": "From"
     },
-    "Developer on (GitHub)": {
-        "developer-on": "Developer on"
-    },
     "GPL-3.0 **License**": {
         "license": "License"
-    },
-    "Moderator on (Brainly)": {
-        "moderator-on": "Moderator on"
     },
     "Photographer on (Unsplash)": {
         "photographer-on": "Photographer on"
@@ -31,9 +25,6 @@
     },
     "The introduction line of the COVID-19 announcement box": {
         "covid-psa-1": "Make sure to do these 5 simple things to help stop the spread of COVID-19:"
-    },
-    "The introduction sentence": {
-        "intro": "I'm a high-school freshman with too much spare time on my hands."
     },
     "The link for more info at the bottom of the COVID-19 announcement box": {
         "click-more-info": "Click here for more information."
@@ -65,13 +56,12 @@
     "The title of the popular stories section": {
         "popular-title": "Most Popular Stories"
     },
-    "The very first line of the website": {
-        "hey-there": "Hey there, I'm Ben Soyka!"
-    },
     "Title for the COVID-19 announcement box": {
         "public-service-announcement": "Public Service Announcement"
     },
-    "Writer on (Medium)": {
-        "writer-on": "Writer on"
-    }
+    "developer-on": "Developer on",
+    "hey-there": "Hey there, I'm Ben Soyka!",
+    "intro": "I'm a high-school freshman with too much spare time on my hands.",
+    "moderator-on": "Moderator on",
+    "writer-on": "Writer on"
 }
