@@ -1,27 +1,44 @@
 {
-    "hey-there": "¡Hola, mi nombre es Ben Soyka!",
-    "intro": "Soy un estudiante de primer año de secundaria con demasiado tiempo libre en mis manos.",
-    "writer-on": "Escritor en",
-    "developer-on": "Desarrollador en",
-    "moderator-on": "Moderador en",
-    "photographer-on": "Fotógrafo en",
-    "public-service-announcement": "Anuncio de Servicio Publico",
-    "covid-psa-1": "",
-    "covid-psa-2": "",
-    "covid-psa-3": "",
-    "covid-psa-4": "",
-    "covid-psa-5": "",
-    "covid-psa-6": "",
-    "click-more-info": "",
-    "mailing-list-title": "",
-    "mailing-list-subtitle": "",
-    "mailing-list-link": "",
-    "popular-title": "",
-    "from": "",
-    "follow-me": "",
-    "with": "",
-    "and": "",
-    "license": "",
-    "read-now": "",
-    "contribute-translations": ""
+    "(Developed) **with** (time) and (love)": {
+        "with": "con"
+    },
+    "(Developed) with (time) **and** (love)": {
+        "and": "y"
+    },
+    "**From** Medium\" (used as in \"Source:\")": {
+        "from": "Desde"
+    },
+    "Developer on (GitHub)": {
+        "developer-on": "Desarrollador en"
+    },
+    "GPL-3.0 **License**": {
+        "license": "Licencia"
+    },
+    "Moderator on (Brainly)": {
+        "moderator-on": "Moderador en"
+    },
+    "Photographer on (Unsplash)": {
+        "photographer-on": "Fotógrafo en"
+    },
+    "The fifth list item in the COVID-19 announcement box": {
+        "covid-psa-6": "No toques tu cara."
+    },
+    "The introduction sentence": {
+        "intro": "Soy un estudiante de primer año de secundaria con demasiado tiempo libre en mis manos."
+    },
+    "The text of the CTA link to help translate, just as you're doing right now": {
+        "contribute-translations": "Contribuir traducciones"
+    },
+    "The title of the popular stories section": {
+        "popular-title": "Cuentos Más Populares"
+    },
+    "The very first line of the website": {
+        "hey-there": "¡Hola, mi nombre es Ben Soyka!"
+    },
+    "Title for the COVID-19 announcement box": {
+        "public-service-announcement": "Anuncio de Servicio Publico"
+    },
+    "Writer on (Medium)": {
+        "writer-on": "Escritor en"
+    }
 }
