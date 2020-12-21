@@ -1,27 +1,77 @@
 {
-    "hey-there": "Hey there, I'm Ben Soyka!",
-    "intro": "I'm a high-school freshman with too much spare time on my hands.",
-    "writer-on": "Writer on",
-    "developer-on": "Developer on",
-    "moderator-on": "Moderator on",
-    "photographer-on": "Photographer on",
-    "public-service-announcement": "Public Service Announcement",
-    "covid-psa-1": "Make sure to do these 5 simple things to help stop the spread of COVID-19:",
-    "covid-psa-2": "Stay 6 feet away from others.",
-    "covid-psa-3": "Stay home as much as possible, especially if you feel sick.",
-    "covid-psa-4": "Wash your hands often for at least 20 seconds.",
-    "covid-psa-5": "Cough and sneeze into your elbow.",
-    "covid-psa-6": "Don't touch your face.",
-    "click-more-info": "Click here for more information.",
-    "mailing-list-title": "Join my mailing list!",
-    "mailing-list-subtitle": "Subscribe to get updates on all my latest and future projects.",
-    "mailing-list-link": "Count me in!",
-    "popular-title": "Most Popular Stories",
-    "from": "From",
-    "follow-me": "Follow me!",
-    "with": "with",
-    "and": "and",
-    "license": "License",
-    "read-now": "Read now",
-    "contribute-translations": "Contribute translations"
+    "(Developed) **with** (time) and (love)": {
+        "with": "with"
+    },
+    "(Developed) with (time) **and** (love)": {
+        "and": "and"
+    },
+    "**From** Medium\" (used as in \"Source:\")": {
+        "from": "From"
+    },
+    "Developer on (GitHub)": {
+        "developer-on": "Developer on"
+    },
+    "GPL-3.0 **License**": {
+        "license": "License"
+    },
+    "Moderator on (Brainly)": {
+        "moderator-on": "Moderator on"
+    },
+    "Photographer on (Unsplash)": {
+        "photographer-on": "Photographer on"
+    },
+    "The fifth list item in the COVID-19 announcement box": {
+        "covid-psa-6": "Don't touch your face."
+    },
+    "The first list item in the COVID-19 announcement box": {
+        "covid-psa-2": "Stay 6 feet away from others."
+    },
+    "The fourth list item in the COVID-19 announcement box": {
+        "covid-psa-5": "Cough and sneeze into your elbow."
+    },
+    "The introduction line of the COVID-19 announcement box": {
+        "covid-psa-1": "Make sure to do these 5 simple things to help stop the spread of COVID-19:"
+    },
+    "The introduction sentence": {
+        "intro": "I'm a high-school freshman with too much spare time on my hands."
+    },
+    "The link for more info at the bottom of the COVID-19 announcement box": {
+        "click-more-info": "Click here for more information."
+    },
+    "The second list item in the COVID-19 announcement box": {
+        "covid-psa-3": "Stay home as much as possible, especially if you feel sick."
+    },
+    "The subtitle of the mailing list section": {
+        "mailing-list-subtitle": "Subscribe to get updates on all my latest and future projects."
+    },
+    "The text of the CTA link to follow me on Medium (social network)": {
+        "follow-me": "Follow me!"
+    },
+    "The text of the CTA link to help translate, just as you're doing right now": {
+        "contribute-translations": "Contribute translations"
+    },
+    "The text of the CTA links on my popular stories": {
+        "read-now": "Read now"
+    },
+    "The text of the link to subscribe to my mailing list": {
+        "mailing-list-link": "Count me in!"
+    },
+    "The third list item in the COVID-19 announcement box": {
+        "covid-psa-4": "Wash your hands often for at least 20 seconds."
+    },
+    "The title of the mailing list section": {
+        "mailing-list-title": "Join my mailing list!"
+    },
+    "The title of the popular stories section": {
+        "popular-title": "Most Popular Stories"
+    },
+    "The very first line of the website": {
+        "hey-there": "Hey there, I'm Ben Soyka!"
+    },
+    "Title for the COVID-19 announcement box": {
+        "public-service-announcement": "Public Service Announcement"
+    },
+    "Writer on (Medium)": {
+        "writer-on": "Writer on"
+    }
 }
