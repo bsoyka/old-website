@@ -1,8 +1,4 @@
 {
-    "The introduction sentence": {
-        "intro": "Je suis un étudiant de première année au lycée avec trop de temps libre."
-    },
-    "The very first line of the website": {
-        "hey-there": "Salut, je m'appelle Ben Soyka!"
-    }
+    "hey-there": "Salut, je m'appelle Ben Soyka!",
+    "intro": "Je suis un étudiant de première année au lycée avec trop de temps libre."
 }
