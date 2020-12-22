@@ -26,6 +26,7 @@
     <div class="container-fluid top">
         <ul class="switch-locale">
             <li><a href="#" class="lang-switch" data-locale="en"><img src="img/gb.svg" alt="English"></a></li>
+            <li><a href="#" class="lang-switch" data-locale="fr"><img src="img/fr.svg" alt="French"></a></li>
         </ul>
 
         <h1 class="title has-text-weight-bold is-size-1 has-text-centered my-5" data-i18n="hey-there"></h1>
@@ -214,6 +215,7 @@
         $(document).ready(function () {
             $.i18n().load({
                 en: "locales/en.json",
+                fr: "locales/fr.json",
             }).done(function () {
                 $("body").i18n();
 
