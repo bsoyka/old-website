@@ -20,17 +20,12 @@
 
     <!-- Compiled from scss/main.scss -->
     <link rel="stylesheet" href="css/main.min.css">
-
-    <!-- Mailchimp -->
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/42de34ca620a386b20064a62b/81f2fee4b2f5095375805f0a6.js");</script>
 </head>
 
 <body>
     <div class="container-fluid top">
         <ul class="switch-locale">
             <li><a href="#" class="lang-switch" data-locale="en"><img src="img/gb.svg" alt="English"></a></li>
-            <li><a href="#" class="lang-switch" data-locale="fr"><img src="img/fr.svg" alt="French"></a></li>
         </ul>
 
         <h1 class="title has-text-weight-bold is-size-1 has-text-centered my-5" data-i18n="hey-there"></h1>
@@ -88,20 +83,122 @@
 
     <hr>
 
-    <div class="container has-text-centered">
-        <h1 class="title is-3" data-i18n="mailing-list-title"></h1>
-        <p class="subtitle is-5" data-i18n="mailing-list-subtitle"></p>
-        <a href="https://bsoyka.us16.list-manage.com/subscribe?u=42de34ca620a386b20064a62b&id=43c89756dc"
-            class="button is-primary is-medium" target="_blank" data-i18n="mailing-list-link"></a>
+    <div class="container">
+        <div class="has-text-centered">
+            <h1 class="title is-3" data-i18n="mailing-list-title"></h1>
+            <p class="subtitle is-5" data-i18n="mailing-list-subtitle"></p>
+            <button class="button is-primary is-medium" target="_blank" data-i18n="mailing-list-link"
+                id="mailing-list-link"></button>
+        </div>
+
+        <div id="mc-signup-form">
+            <form
+                action="https://bsoyka.us16.list-manage.com/subscribe/post?u=42de34ca620a386b20064a62b&amp;id=43c89756dc"
+                method="post" target="_blank">
+
+                <div class="indicates-required"><i class="fas fa-asterisk"></i> <span
+                        data-i18n="indicates-required"></span></div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label for="mce-EMAIL" class="label">
+                            <span data-i18n="email-address"></span> <i class="fas fa-asterisk"></i>
+                        </label>
+                    </div>
+                    <div class="field-body">
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" name="EMAIL" id="mce-EMAIL" required>
+
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label for="mce-FNAME" class="label" data-i18n="first-name"></label>
+                    </div>
+                    <div class="field-body">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" name="FNAME" id="mce-FNAME">
+
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label for="mce-LNAME" class="label" data-i18n="last-name"></label>
+                    </div>
+                    <div class="field-body">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" name="LNAME" id="mce-LNAME">
+
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label"></div>
+
+                    <div class="field-body">
+                        <fieldset name="interestgroup_field">
+                            <div class="control">
+                                <label for="gdpr_4141">
+                                    <input type="checkbox" id="gdpr_4141" name="gdpr[4141]" value="Y"
+                                        class="av-checkbox gdpr" required>
+
+                                    <span>
+                                        <span data-i18n="confirm-emails"></span>
+                                        <i class="fas fa-asterisk"></i>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div>
+                    <p data-i18n="unsubscribe-note"></p>
+
+                    <p>
+                        <span data-i18n="mailchimp-note"></span>
+                        <a href="https://mailchimp.com/legal/" target="_blank" data-i18n="mailchimp-learn-more"></a>
+                    </p>
+                </div>
+
+                <!-- Real people should not fill this in and expect good things -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_42de34ca620a386b20064a62b_43c89756dc" tabindex="-1" value="">
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button is-primary"
+                            data-i18n="subscribe"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
         <br><br>
 
-        <a href="https://www.stickermule.com/unlock?ref_id=1113542701&amp;utm_content=728x90&amp;utm_medium=embed&amp;utm_source=invite"
-            target="_blank">
-            <img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" border="0" height="60"
-                src="https://res.cloudinary.com/print-bear/image/upload/v1531752798/banners/stickermule-invite-friends-small.jpg"
-                width="234">
-        </a>
+        <div class="has-text-centered">
+            <a href="https://www.stickermule.com/unlock?ref_id=1113542701&amp;utm_content=728x90&amp;utm_medium=embed&amp;utm_source=invite"
+                target="_blank">
+                <img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" border="0" height="60"
+                    src="https://res.cloudinary.com/print-bear/image/upload/v1531752798/banners/stickermule-invite-friends-small.jpg"
+                    width="234">
+            </a>
+        </div>
     </div>
 
     <hr>
@@ -219,7 +316,6 @@
         $(document).ready(function () {
             $.i18n().load({
                 en: "locales/en.json",
-                fr: "locales/fr.json",
             }).done(function () {
                 $("body").i18n();
 
@@ -228,6 +324,17 @@
                     $.i18n().locale = $(this).data("locale");
                     $("body").i18n();
                 });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#mc-signup-form").hide();
+
+            $("#mailing-list-link").click(function () {
+                $("#mc-signup-form").show();
+                $("#mailing-list-link").hide();
             });
         });
     </script>
