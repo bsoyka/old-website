@@ -1,0 +1,35 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+By signing this message and publishing it at
+https://bsoyka.me/proof.txt, I hereby claim:
+
+* I am Benjamin Soyka.
+* bsoyka.me is my domain.
+* I own the PGP key described below and have used it to sign
+  this message.
+
+
+
+My PGP Key
+==========
+Key ID:      A5E7 26D5 A652 28EA
+Fingerprint: 0CA7 CC16 A64B 68F3 048E  E8FE A5E7 26D5 A652 28EA
+
+You can find my PGP public key at https://bsoyka.me/key.asc as
+well as on various key servers.
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEEDKfMFqZLaPMEjuj+pecm1aZSKOoFAmAPmggACgkQpecm1aZS
+KOoWSgwAsc1pSCZnh4aPozwrJ1gvJNjU1AxZCcVQozqNvGZ4DDL62m2ojIxmRNv2
+O1XECEC0L00DQUsK9A1iFMOuZd1ssw+ATUYN4EGFLVNluNsPlhryq4AW0aiIHvmx
+60PDMGBUSwZ7S23RK1w3PI6VbVNjfsmV/T94oiQYUaje21RRaJhh19yW59/234BK
+zpDlTcOysob7XTnFk1hYH42ZO9vV/9y6eBN/5Ji/HG3hm4p0/gpCp6fL8ArQZmon
+CZdYQ/yF2vyi1gQ66SU4db/rujqVU9TEggaWHOaf4+9EPP5k9oOHKrQhszy9aQRC
+cpdoEMN50c+EoIN0dUmoIZfX39AuFT5+b4LSiEjMA2JmaBOfA44cUAocZIFEr0eI
+4q1G5lxBP+o+0pDMrD1Lbbvia3c5u3nm+Kw4rfEW87yRVVl95Sa1Td22Au3i0uL3
+wfqwxgPiclAcmzfAMTKKaoFz3e7ECSDwlGrMUQ7yzu8osDmVoIYOlS+rqloujZcP
+IB4jzGKa
+=KZbR
+-----END PGP SIGNATURE-----
