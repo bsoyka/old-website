@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="description"
-        content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
+    <meta name="description" content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
     <meta name="theme-color" content="#3409ac">
     <meta name="robots" content="index, follow">
 
@@ -11,8 +10,7 @@
     <meta name="og:type" content="website">
     <meta name="og:url" content="https://bsoyka.me">
     <meta name="og:image" content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200">
-    <meta name="og:description"
-        content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
+    <meta name="og:description" content="I'm a high-school freshman with too much spare time on my hands. Writer, developer, moderator, and photographer.">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +19,42 @@
     <!-- Compiled from scss/main.scss -->
     <link rel="stylesheet" href="css/main.min.css">
 
-    <script data-ad-client="ca-pub-9549332832658601" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-9549332832658601" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- MailerLite Universal -->
+    <script>
+        (function(m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e;
+
+            function f() {
+                var c = {
+                    a: arguments,
+                    q: []
+                };
+                var r = this.push(c);
+                return "number" != typeof r ? r : f.bind(c.q);
+            }
+            f.q = f.q || [];
+            m[e] = m[e] || f.bind(f.q);
+            m[e].q = m[e].q || f.q;
+            r = a.createElement(i);
+            var _ = a.getElementsByTagName(i)[0];
+            r.async = 1;
+            r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+            _.parentNode.insertBefore(r, _);
+        })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '3228436', 't2y2b4f4i3', 'load');
+    </script>
+    <!-- End MailerLite Universal -->
 </head>
 
 <body>
     <div class="container-fluid top">
         <ul class="switch-locale">
-            <li><a href="#" class="lang-switch" data-locale="en"><img src="img/gb.svg" alt="English"></a></li>
+            <li>
+                <a href="#" class="lang-switch" data-locale="en"><img src="img/gb.svg" alt="English"></a>
+            </li>
         </ul>
 
         <h1 class="title has-text-weight-bold is-size-1 has-text-centered my-5" data-i18n="hey-there"></h1>
@@ -36,26 +62,21 @@
         <div class="columns is-centered">
             <div class="column is-one-third">
                 <figure class="image is-flex is-horizontal-center">
-                    <img src="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" alt="Avatar"
-                        id="avatar" class="is-200x200 is-rounded">
+                    <img src="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" alt="Avatar" id="avatar" class="is-200x200 is-rounded">
                 </figure>
                 <br>
             </div>
 
             <div class="column is-half">
                 <h4 class="subtitle is-5" data-i18n="intro"></h4>
-                <div class="item"><span data-i18n="writer-on"></span> <a href="https://medium.bsoyka.me"
-                        target="_blank"><i class="fab fa-medium"></i></a>
+                <div class="item"><span data-i18n="writer-on"></span> <a href="https://medium.bsoyka.me" target="_blank"><i class="fab fa-medium"></i></a>
                 </div>
-                <div class="item"><span data-i18n="developer-on"></span> <a href="https://github.com/bsoyka"
-                        target="_blank"><i class="fab fa-github"></i></a>&nbsp;<a
-                        href="https://stackoverflow.com/users/9549259/ben-soyka" target="_blank"><i
+                <div class="item"><span data-i18n="developer-on"></span> <a href="https://github.com/bsoyka" target="_blank"><i class="fab fa-github"></i></a>&nbsp;<a href="https://stackoverflow.com/users/9549259/ben-soyka" target="_blank"><i
                             class="fab fa-stack-overflow"></i></a></div>
-                <div class="item"><span data-i18n="moderator-on"></span> <a
-                        href="https://brainly.com/app/profile/13888565" target="_blank"><img src="img/brainly.svg"
-                            alt="Brainly"></a></div>
-                <div class="item"><span data-i18n="photographer-on"></span> <a href="https://unsplash.com/@bsoyka"
-                        target="_blank"><i class="fab fa-unsplash"></i></a></div>
+                <div class="item"><span data-i18n="moderator-on"></span>
+                    <a href="https://brainly.com/app/profile/13888565" target="_blank"><img src="img/brainly.svg" alt="Brainly"></a>
+                </div>
+                <div class="item"><span data-i18n="photographer-on"></span> <a href="https://unsplash.com/@bsoyka" target="_blank"><i class="fab fa-unsplash"></i></a></div>
 
                 <br>
 
@@ -63,10 +84,10 @@
 
                 <br>
 
-                <div><span data-i18n="reach-out"></span> <a href="mailto:hello@bsoyka.me" target="_blank"
-                        class="has-text-info">hello@bsoyka.me</a> (<a href="https://encrypt.to/hello@bsoyka.me"
-                        data-i18n="securely" target="_blank" class="has-text-info"></a>). <a href="key.asc"
-                        data-i18n="pgp-key" target="_blank" class="has-text-info"></a>.</div>
+                <div><span data-i18n="reach-out"></span> <a href="mailto:hello@bsoyka.me" target="_blank" class="has-text-info">hello@bsoyka.me</a> (
+                    <a href="https://encrypt.to/hello@bsoyka.me" data-i18n="securely" target="_blank" class="has-text-info"></a>).
+                    <a href="key.asc" data-i18n="pgp-key" target="_blank" class="has-text-info"></a>.
+                </div>
             </div>
         </div>
     </div>
@@ -75,118 +96,8 @@
 
     <div class="container">
         <div class="has-text-centered">
-            <h1 class="title is-3" data-i18n="mailing-list-title"></h1>
-            <p class="subtitle is-5" data-i18n="mailing-list-subtitle"></p>
-            <button class="button is-primary is-medium" target="_blank" data-i18n="mailing-list-link"
-                id="mailing-list-link"></button>
-        </div>
-
-        <div id="mc-signup-form">
-            <form
-                action="https://bsoyka.us16.list-manage.com/subscribe/post?u=42de34ca620a386b20064a62b&amp;id=43c89756dc"
-                method="post" target="_blank">
-
-                <div class="indicates-required"><i class="fas fa-asterisk"></i> <span
-                        data-i18n="indicates-required"></span></div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label">
-                        <label for="mce-EMAIL" class="label">
-                            <span data-i18n="email-address"></span> <i class="fas fa-asterisk"></i>
-                        </label>
-                    </div>
-                    <div class="field-body">
-                        <div class="control has-icons-left">
-                            <input class="input" type="email" name="EMAIL" id="mce-EMAIL" required>
-
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label">
-                        <label for="mce-FNAME" class="label" data-i18n="first-name"></label>
-                    </div>
-                    <div class="field-body">
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" name="FNAME" id="mce-FNAME">
-
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label">
-                        <label for="mce-LNAME" class="label" data-i18n="last-name"></label>
-                    </div>
-                    <div class="field-body">
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" name="LNAME" id="mce-LNAME">
-
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label"></div>
-
-                    <div class="field-body">
-                        <fieldset name="interestgroup_field">
-                            <div class="control">
-                                <label for="gdpr_4141">
-                                    <input type="checkbox" id="gdpr_4141" name="gdpr[4141]" value="Y"
-                                        class="av-checkbox gdpr" required>
-
-                                    <span>
-                                        <span data-i18n="confirm-emails"></span>
-                                        <i class="fas fa-asterisk"></i>
-                                    </span>
-                                </label>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-
-                <div>
-                    <p data-i18n="unsubscribe-note"></p>
-
-                    <p>
-                        <span data-i18n="mailchimp-note"></span>
-                        <a href="https://mailchimp.com/legal/" target="_blank" data-i18n="mailchimp-learn-more"></a>
-                    </p>
-                </div>
-
-                <!-- Real people should not fill this in and expect good things -->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_42de34ca620a386b20064a62b_43c89756dc" tabindex="-1" value="">
-                </div>
-
-                <div class="field">
-                    <div class="control">
-                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button is-primary"
-                            data-i18n="subscribe"></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <br><br>
-
-        <div class="has-text-centered">
-            <a href="https://www.stickermule.com/unlock?ref_id=1113542701&amp;utm_content=728x90&amp;utm_medium=embed&amp;utm_source=invite"
-                target="_blank">
-                <img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" border="0" height="60"
-                    src="https://res.cloudinary.com/print-bear/image/upload/v1531752798/banners/stickermule-invite-friends-small.jpg"
-                    width="234">
+            <a href="https://www.stickermule.com/unlock?ref_id=1113542701&amp;utm_content=728x90&amp;utm_medium=embed&amp;utm_source=invite" target="_blank">
+                <img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" border="0" height="60" src="https://res.cloudinary.com/print-bear/image/upload/v1531752798/banners/stickermule-invite-friends-small.jpg" width="234">
             </a>
         </div>
     </div>
@@ -196,8 +107,8 @@
     <section class="section">
         <div class="container has-text-centered">
             <h1 class="title" data-i18n="popular-title"></h1>
-            <p class="subtitle"><span data-i18n="from"></span> <a href="https://bsoyka.medium.com"
-                    target="_blank">Medium</a> (<a href="https://bsoyka.medium.com/follow" data-i18n="follow-me"></a>)
+            <p class="subtitle"><span data-i18n="from"></span> <a href="https://bsoyka.medium.com" target="_blank">Medium</a> (
+                <a href="https://bsoyka.medium.com/follow" data-i18n="follow-me"></a>)
             </p>
         </div>
 
@@ -208,22 +119,18 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/caleb-white-NLE9RCsxX3c-unsplash.jpg"
-                                alt="4 New GitHub Products That Will Change How You Code">
+                            <img src="img/caleb-white-NLE9RCsxX3c-unsplash.jpg" alt="4 New GitHub Products That Will Change How You Code">
                         </div>
                         <div class="card-content">
                             <div class="content">
                                 <p class="title is-4">4 New GitHub Products That Will Change How You Code</p>
-                                <p class="subtitle is-6">Exciting announcements from the first virtual GitHub Satellite
-                                    event</p>
+                                <p class="subtitle is-6">Exciting announcements from the first virtual GitHub Satellite event
+                                </p>
                             </div>
                         </div>
                         <footer class="card-footer">
-                            <a href="https://medium.com/better-programming/4-new-github-products-that-will-change-how-you-code-27933401faa0?source=friends_link&sk=d298a554ccb7d9c5d5c6bd8f48a9d777"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white"
-                                data-i18n="read-now"></a>
-                            <a href="https://medium.com/better-programming" target="_blank"
-                                class="card-footer-item has-background-primary-light">Better Programming</a>
+                            <a href="https://medium.com/better-programming/4-new-github-products-that-will-change-how-you-code-27933401faa0?source=friends_link&sk=d298a554ccb7d9c5d5c6bd8f48a9d777" target="_blank" class="card-footer-item has-background-primary has-text-white" data-i18n="read-now"></a>
+                            <a href="https://medium.com/better-programming" target="_blank" class="card-footer-item has-background-primary-light">Better Programming</a>
                         </footer>
                     </div>
                 </div>
@@ -231,8 +138,7 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/mobile-phone-1875813_1920.jpg"
-                                alt="4 Ways Technology Has Changed Our Lives for the Better">
+                            <img src="img/mobile-phone-1875813_1920.jpg" alt="4 Ways Technology Has Changed Our Lives for the Better">
                         </div>
                         <div class="card-content">
                             <div class="content">
@@ -241,9 +147,7 @@
                             </div>
                         </div>
                         <footer class="card-footer">
-                            <a href="https://bsoyka.medium.com/4-ways-technology-has-changed-our-lives-for-the-better-c2cb4cc8da87?sk=2308d876705dc0e0c2b85070d50553fb"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white"
-                                data-i18n="read-now"></a>
+                            <a href="https://bsoyka.medium.com/4-ways-technology-has-changed-our-lives-for-the-better-c2cb4cc8da87?sk=2308d876705dc0e0c2b85070d50553fb" target="_blank" class="card-footer-item has-background-primary has-text-white" data-i18n="read-now"></a>
                         </footer>
                     </div>
                 </div>
@@ -251,8 +155,7 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/4237451273_59f56e6414_o.jpg"
-                                alt="How To Build a Simple Magic 8 Ball in Python">
+                            <img src="img/4237451273_59f56e6414_o.jpg" alt="How To Build a Simple Magic 8 Ball in Python">
                         </div>
                         <div class="card-content">
                             <div class="content">
@@ -261,11 +164,8 @@
                             </div>
                         </div>
                         <footer class="card-footer">
-                            <a href="https://medium.com/better-programming/how-to-build-a-simple-magic-8-ball-in-python-29335954d9f2?source=friends_link&sk=a457f1252d780b7ba30c6eaed63b6009"
-                                target="_blank" class="card-footer-item has-background-primary has-text-white"
-                                data-i18n="read-now"></a>
-                            <a href="https://medium.com/better-programming" target="_blank"
-                                class="card-footer-item has-background-primary-light">Better Programming</a>
+                            <a href="https://medium.com/better-programming/how-to-build-a-simple-magic-8-ball-in-python-29335954d9f2?source=friends_link&sk=a457f1252d780b7ba30c6eaed63b6009" target="_blank" class="card-footer-item has-background-primary has-text-white" data-i18n="read-now"></a>
+                            <a href="https://medium.com/better-programming" target="_blank" class="card-footer-item has-background-primary-light">Better Programming</a>
                         </footer>
                     </div>
                 </div>
@@ -276,14 +176,15 @@
     <footer class="footer">
         <div class="container has-text-centered has-text-weight-semibold">
             <p><a href="https://github.com/bsoyka/bsoyka.github.io" target="_blank"><i class="fas fa-code"></i></a>
-                <span data-i18n="with"></span> <i class="fas fa-clock has-text-success"></i> <span
-                    data-i18n="and"></span> <i class="fas fa-heart has-text-danger"></i>
+                <span data-i18n="with"></span> <i class="fas fa-clock has-text-success"></i> <span data-i18n="and"></span> <i class="fas fa-heart has-text-danger"></i>
             </p>
 
             <br>
 
             <p><a href="LICENSE" target="_blank">GPL-3.0 <span data-i18n="license"></span></a></p>
-            <p><a href="https://poeditor.com/join/project?hash=WriDf8seUX" data-i18n="contribute-translations"></a></p>
+            <p>
+                <a href="https://poeditor.com/join/project?hash=WriDf8seUX" data-i18n="contribute-translations"></a>
+            </p>
         </div>
     </footer>
 
@@ -291,8 +192,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" async></script>
 
     <!-- Localization -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
     <script src="js/CLDRPluralRuleParser.js"></script>
     <script src="js/jquery.i18n.js"></script>
@@ -303,13 +203,13 @@
     <script src="js/jquery.i18n.emitter.js"></script>
     <script src="js/jquery.i18n.emitter.bidi.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $.i18n().load({
                 en: "locales/en.json",
-            }).done(function () {
+            }).done(function() {
                 $("body").i18n();
 
-                $(".switch-locale").on("click", "a", function (e) {
+                $(".switch-locale").on("click", "a", function(e) {
                     e.preventDefault();
                     $.i18n().locale = $(this).data("locale");
                     $("body").i18n();
@@ -319,18 +219,17 @@
     </script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("#mc-signup-form").hide();
 
-            $("#mailing-list-link").click(function () {
+            $("#mailing-list-link").click(function() {
                 $("#mc-signup-form").show();
                 $("#mailing-list-link").hide();
             });
         });
     </script>
 
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-        data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'></script>
 
     <script src="https://unpkg.com/@paybutton/paybutton@^1.0/dist/paybutton.js"></script>
 </body>
