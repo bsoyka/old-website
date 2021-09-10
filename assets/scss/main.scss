@@ -1,0 +1,169 @@
+$main-font-family: Montserrat, sans-serif;
+$heading-font-family: Eczar, serif;
+
+$background-color: #2a2b34;
+$color: white;
+$accent-1: #ffe8a9;
+$accent-2: #fec4a9;
+$accent-3: #d3b9f8;
+$accent-4: #b9d4ff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font-family;
+    font-size: 1.3em;
+    line-height: 1.5;
+    background-color: $background-color;
+    color: $color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em 5em 0.01em 5em;
+
+    @media (max-width: 768px) {
+        padding: 1em 2em 0.01em 2em;
+    }
+}
+
+a {
+    color: $accent-4;
+    font-weight: 600;
+
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: lighten($accent-4, 20%);
+    }
+}
+
+.content {
+    line-height: 1.6;
+    margin-bottom: 0.9em;
+
+    @media (max-width: 768px) {
+        font-size: 75%;
+    }
+}
+
+.section-heading {
+    font-family: $heading-font-family;
+    font-size: 2.7rem;
+
+    color: $accent-3;
+    text-align: center;
+}
+
+header {
+    @extend .container;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    #header-toggle {
+        color: $accent-3;
+
+        transition: transform 0.5s;
+
+        @media (min-width: 480px) {
+            display: none;
+        }
+    }
+
+    #header-links {
+        text-align: center;
+
+        width: 100%;
+        padding: 0.6em 0 0 0;
+
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+
+            transition: all 0.5s ease-in-out;
+            transform-origin: left top;
+            transform: scaleY(0);
+        }
+
+        .header-link {
+            font-size: 1rem;
+            color: $accent-3;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            padding: 0.9em 1.5em;
+
+            transition: color 0.5s ease-in-out;
+
+            &:hover {
+                color: lighten($accent-3, 20%);
+            }
+        }
+    }
+}
+
+#intro {
+    @extend .container;
+
+    padding: 2em 5em 3em 5em;
+
+    @media (max-width: 768px) {
+        padding: 3.2em 1.3em;
+    }
+
+    .heading {
+        font-family: $heading-font-family;
+        font-size: 5rem;
+        line-height: 1.15;
+
+        color: $accent-1;
+
+        margin-bottom: 0.07em;
+    }
+
+    .subheading {
+        font-size: 1.7rem;
+        color: $accent-2;
+    }
+}
+
+footer {
+    @extend .container;
+
+    padding: 4.5em 5em 5em 5em;
+
+    color: mix($background-color, $color);
+    font-size: 0.7em;
+
+    text-align: center;
+
+    #social-links {
+        font-size: 2em;
+
+        display: flex;
+        justify-content: center;
+
+        padding-bottom: 0.5em;
+
+        .social-link {
+            padding: 0 0.5em;
+        }
+    }
+}
