@@ -45,6 +45,10 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Montserrat:wght@400;600;700&display=swap"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/cead.css"
+        />
         <link rel="stylesheet" href="assets/css/main.min.css" />
 
         <!-- Icons -->
@@ -53,9 +57,10 @@
         <!-- Google Analytics -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-72DDGHXEGZ"
+            data-cead
+            data-src="https://www.googletagmanager.com/gtag/js?id=G-72DDGHXEGZ"
         ></script>
-        <script>
+        <script data-cead>
             window.dataLayer = window.dataLayer || [];
 
             function gtag() {
@@ -67,7 +72,7 @@
         </script>
 
         <!-- Mailchimp -->
-        <script id="mcjs">
+        <script id="mcjs" data-cead>
             !(function (c, h, i, m, p) {
                 (m = c.createElement(h)),
                     (p = c.getElementsByTagName(h)[0]),
@@ -83,6 +88,19 @@
     </head>
 
     <body>
+        <div class="cead" role="region" aria-label="Cookie consent">
+            <p>
+                Hey! Could I please enable some services and cookies to improve
+                your experience and my website?
+            </p>
+            <div class="cead__btns">
+                <button class="cead__btn cead__btn--decline">
+                    No, thanks.
+                </button>
+                <button class="cead__btn cead__btn--accept">Sure!</button>
+            </div>
+        </div>
+
         <header>
             <a
                 href="javascript:void(0);"
@@ -199,8 +217,11 @@
         <!-- Cloudflare -->
         <script
             defer
-            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cead
+            data-src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'
         ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/browser.js"></script>
     </body>
 </html>
