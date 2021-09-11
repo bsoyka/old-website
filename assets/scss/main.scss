@@ -59,6 +59,14 @@ a {
     text-align: center;
 }
 
+.dim {
+    color: mix($background-color, $color);
+}
+
+pre.wrap {
+    white-space: pre-wrap;
+}
+
 header {
     @extend .container;
 
@@ -146,10 +154,10 @@ header {
 
 footer {
     @extend .container;
+    @extend .dim;
 
     padding: 4.5em 5em 5em 5em;
 
-    color: mix($background-color, $color);
     font-size: 0.7em;
 
     text-align: center;
