@@ -1,223 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Home — Ben Soyka</title>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta
-            name="description"
-            content="A high school student who loves to code, write, take photos, and more"
-        />
-        <meta name="theme-color" content="#ffe8a9" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Ben Soyka" />
+    <title>Home — Ben Soyka</title>
 
-        <meta name="og:title" content="Ben Soyka" />
-        <meta name="og:type" content="website" />
-        <meta name="og:url" content="https://bsoyka.me" />
-        <meta
-            name="og:image"
-            content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200"
-        />
-        <meta
-            name="og:description"
-            content="A high school student who loves to code, write, take photos, and more"
-        />
+    <meta name="description" content="A high school student who loves to code, write, take photos, and more" />
+    <meta name="theme-color" content="#ffe8a9" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ben Soyka" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@bsoyka3" />
-        <meta name="twitter:creator" content="@bsoyka3" />
-        <meta name="twitter:title" content="Ben Soyka" />
-        <meta
-            name="twitter:description"
-            content="A high school student who loves to code, write, take photos, and more"
-        />
-        <meta
-            name="twitter:image"
-            content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200"
-        />
+    <meta name="og:title" content="Ben Soyka" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://bsoyka.me" />
+    <meta name="og:image" content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" />
+    <meta name="og:description" content="A high school student who loves to code, write, take photos, and more" />
 
-        <!-- Stylesheets -->
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Montserrat:wght@400;600;700&display=swap"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/cead.css"
-        />
-        <link rel="stylesheet" href="assets/css/main.min.css" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bsoyka3" />
+    <meta name="twitter:creator" content="@bsoyka3" />
+    <meta name="twitter:title" content="Ben Soyka" />
+    <meta name="twitter:description" content="A high school student who loves to code, write, take photos, and more" />
+    <meta name="twitter:image" content="https://www.gravatar.com/avatar/7246821a7bf0b1b37794b39cb08ee052?s=200" />
 
-        <!-- Icons -->
-        <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Montserrat:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/cead.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
 
-        <!-- Google Analytics -->
-        <script
-            async
-            data-cead
-            data-src="https://www.googletagmanager.com/gtag/js?id=G-72DDGHXEGZ"
-        ></script>
-        <script data-cead>
-            window.dataLayer = window.dataLayer || [];
+    <!-- Icons -->
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+    <!-- Google Analytics -->
+    <script async data-cead data-src="https://www.googletagmanager.com/gtag/js?id=G-72DDGHXEGZ"></script>
+    <script data-cead>
+        window.dataLayer = window.dataLayer || [];
 
-            gtag("config", "G-72DDGHXEGZ");
-        </script>
-    </head>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    <body>
-        <div class="cead" role="region" aria-label="Cookie consent">
-            <p>
-                Hey! Could I please enable some services and cookies to improve
-                your experience and my website?
-            </p>
-            <div class="cead__btns">
-                <button class="cead__btn cead__btn--decline">
-                    No, thanks.
-                </button>
-                <button class="cead__btn cead__btn--accept">Sure!</button>
-            </div>
+        gtag("config", "G-72DDGHXEGZ");
+    </script>
+</head>
+
+<body>
+    <div class="cead" role="region" aria-label="Cookie consent">
+        <p>
+            Hey! Could I please enable some services and cookies to improve
+            your experience and my website?
+        </p>
+        <div class="cead__btns">
+            <button class="cead__btn cead__btn--decline">
+                No, thanks.
+            </button>
+            <button class="cead__btn cead__btn--accept">Sure!</button>
+        </div>
+    </div>
+
+    <header>
+        <a href="javascript:void(0);" id="header-toggle" onclick="toggleHeaderLinks()">
+            <i class="uim uim-bars"></i>
+        </a>
+
+        <div id="header-links">
+            <a href="/" class="header-link">Home</a>
+            <a href="/blog" class="header-link">Blog</a>
+            <a href="/crypto" class="header-link">Crypto</a>
+            <a href="/contact" class="header-link">Contact</a>
+        </div>
+    </header>
+
+    <section id="intro">
+        <p class="heading">Hey! I'm&nbsp;Ben.</p>
+        <p class="subheading">
+            A <span id="age">15</span>-year-old who loves to code
+        </p>
+    </section>
+
+    <div id="waves-container">
+        <svg viewBox="0 330 900 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1">
+            <path
+                d="M0 367L10.7 366.5C21.3 366 42.7 365 64.2 365C85.7 365 107.3 366 128.8 364.8C150.3 363.7 171.7 360.3 193 357.7C214.3 355 235.7 353 257 353C278.3 353 299.7 355 321.2 359.3C342.7 363.7 364.3 370.3 385.8 372.7C407.3 375 428.7 373 450 369.3C471.3 365.7 492.7 360.3 514.2 360.5C535.7 360.7 557.3 366.3 578.8 369.2C600.3 372 621.7 372 643 371.3C664.3 370.7 685.7 369.3 707 370C728.3 370.7 749.7 373.3 771.2 373.8C792.7 374.3 814.3 372.7 835.8 368.7C857.3 364.7 878.7 358.3 889.3 355.2L900 352L900 451L889.3 451C878.7 451 857.3 451 835.8 451C814.3 451 792.7 451 771.2 451C749.7 451 728.3 451 707 451C685.7 451 664.3 451 643 451C621.7 451 600.3 451 578.8 451C557.3 451 535.7 451 514.2 451C492.7 451 471.3 451 450 451C428.7 451 407.3 451 385.8 451C364.3 451 342.7 451 321.2 451C299.7 451 278.3 451 257 451C235.7 451 214.3 451 193 451C171.7 451 150.3 451 128.8 451C107.3 451 85.7 451 64.2 451C42.7 451 21.3 451 10.7 451L0 451Z"
+                fill="#d3b9f8"></path>
+            <path
+                d="M0 369L10.7 370.5C21.3 372 42.7 375 64.2 377.8C85.7 380.7 107.3 383.3 128.8 383.2C150.3 383 171.7 380 193 378.3C214.3 376.7 235.7 376.3 257 375.2C278.3 374 299.7 372 321.2 372.8C342.7 373.7 364.3 377.3 385.8 377.5C407.3 377.7 428.7 374.3 450 373.2C471.3 372 492.7 373 514.2 375.8C535.7 378.7 557.3 383.3 578.8 385.7C600.3 388 621.7 388 643 387C664.3 386 685.7 384 707 384.7C728.3 385.3 749.7 388.7 771.2 389.8C792.7 391 814.3 390 835.8 386.7C857.3 383.3 878.7 377.7 889.3 374.8L900 372L900 451L889.3 451C878.7 451 857.3 451 835.8 451C814.3 451 792.7 451 771.2 451C749.7 451 728.3 451 707 451C685.7 451 664.3 451 643 451C621.7 451 600.3 451 578.8 451C557.3 451 535.7 451 514.2 451C492.7 451 471.3 451 450 451C428.7 451 407.3 451 385.8 451C364.3 451 342.7 451 321.2 451C299.7 451 278.3 451 257 451C235.7 451 214.3 451 193 451C171.7 451 150.3 451 128.8 451C107.3 451 85.7 451 64.2 451C42.7 451 21.3 451 10.7 451L0 451Z"
+                fill="#f6b7dc"></path>
+            <path
+                d="M0 402L10.7 399.8C21.3 397.7 42.7 393.3 64.2 393.3C85.7 393.3 107.3 397.7 128.8 399.7C150.3 401.7 171.7 401.3 193 399.5C214.3 397.7 235.7 394.3 257 393C278.3 391.7 299.7 392.3 321.2 391.8C342.7 391.3 364.3 389.7 385.8 390C407.3 390.3 428.7 392.7 450 394.8C471.3 397 492.7 399 514.2 399.7C535.7 400.3 557.3 399.7 578.8 399.5C600.3 399.3 621.7 399.7 643 400.2C664.3 400.7 685.7 401.3 707 401.5C728.3 401.7 749.7 401.3 771.2 398.5C792.7 395.7 814.3 390.3 835.8 390.3C857.3 390.3 878.7 395.7 889.3 398.3L900 401L900 451L889.3 451C878.7 451 857.3 451 835.8 451C814.3 451 792.7 451 771.2 451C749.7 451 728.3 451 707 451C685.7 451 664.3 451 643 451C621.7 451 600.3 451 578.8 451C557.3 451 535.7 451 514.2 451C492.7 451 471.3 451 450 451C428.7 451 407.3 451 385.8 451C364.3 451 342.7 451 321.2 451C299.7 451 278.3 451 257 451C235.7 451 214.3 451 193 451C171.7 451 150.3 451 128.8 451C107.3 451 85.7 451 64.2 451C42.7 451 21.3 451 10.7 451L0 451Z"
+                fill="#ffbfc3"></path>
+            <path
+                d="M0 415L10.7 414.8C21.3 414.7 42.7 414.3 64.2 414.7C85.7 415 107.3 416 128.8 416.2C150.3 416.3 171.7 415.7 193 415C214.3 414.3 235.7 413.7 257 412.3C278.3 411 299.7 409 321.2 409.3C342.7 409.7 364.3 412.3 385.8 413.2C407.3 414 428.7 413 450 412.2C471.3 411.3 492.7 410.7 514.2 409.7C535.7 408.7 557.3 407.3 578.8 408.2C600.3 409 621.7 412 643 411.7C664.3 411.3 685.7 407.7 707 408.2C728.3 408.7 749.7 413.3 771.2 415C792.7 416.7 814.3 415.3 835.8 412.8C857.3 410.3 878.7 406.7 889.3 404.8L900 403L900 451L889.3 451C878.7 451 857.3 451 835.8 451C814.3 451 792.7 451 771.2 451C749.7 451 728.3 451 707 451C685.7 451 664.3 451 643 451C621.7 451 600.3 451 578.8 451C557.3 451 535.7 451 514.2 451C492.7 451 471.3 451 450 451C428.7 451 407.3 451 385.8 451C364.3 451 342.7 451 321.2 451C299.7 451 278.3 451 257 451C235.7 451 214.3 451 193 451C171.7 451 150.3 451 128.8 451C107.3 451 85.7 451 64.2 451C42.7 451 21.3 451 10.7 451L0 451Z"
+                fill="#ffd0b0"></path>
+            <path
+                d="M0 431L10.7 430.7C21.3 430.3 42.7 429.7 64.2 429.7C85.7 429.7 107.3 430.3 128.8 430.8C150.3 431.3 171.7 431.7 193 429.8C214.3 428 235.7 424 257 423.8C278.3 423.7 299.7 427.3 321.2 427.7C342.7 428 364.3 425 385.8 424C407.3 423 428.7 424 450 424.2C471.3 424.3 492.7 423.7 514.2 424.2C535.7 424.7 557.3 426.3 578.8 427.3C600.3 428.3 621.7 428.7 643 428.3C664.3 428 685.7 427 707 426.2C728.3 425.3 749.7 424.7 771.2 425.3C792.7 426 814.3 428 835.8 429.2C857.3 430.3 878.7 430.7 889.3 430.8L900 431L900 451L889.3 451C878.7 451 857.3 451 835.8 451C814.3 451 792.7 451 771.2 451C749.7 451 728.3 451 707 451C685.7 451 664.3 451 643 451C621.7 451 600.3 451 578.8 451C557.3 451 535.7 451 514.2 451C492.7 451 471.3 451 450 451C428.7 451 407.3 451 385.8 451C364.3 451 342.7 451 321.2 451C299.7 451 278.3 451 257 451C235.7 451 214.3 451 193 451C171.7 451 150.3 451 128.8 451C107.3 451 85.7 451 64.2 451C42.7 451 21.3 451 10.7 451L0 451Z"
+                fill="#ffe8a9"></path>
+        </svg>
+    </div>
+
+    <section class="container">
+        <h1 class="section-heading">About Me</h1>
+
+        <p class="content">
+            Hey there! My name is Ben Soyka, and I'm a high school student
+            who loves to code, write, take photos, and more. I love
+            exploring what the Internet has to offer and learning new
+            skills.
+        </p>
+        <p class="content">
+            I love programming, especially with Python and HTML. In fact, I
+            made this website from scratch &mdash; the
+            <a href="https://github.com/bsoyka/website" target="_blank">source code</a>
+            is on GitHub!
+        </p>
+        <p class="content">
+            You'll find me especially active on
+            <a href="/github" target="_blank">GitHub</a>,
+            <a href="/medium" target="_blank">Medium</a>, and
+            <a href="/unsplash" target="_blank">Unsplash.</a>
+        </p>
+    </section>
+
+    <section class="container">
+        <h1 class="section-heading">Newsletter</h1>
+
+        <p class="content">
+            You can join my email newsletter at
+            <a href="/news">news.bsoyka.me</a> to stay up-to-date on what
+            I'm doing across the Internet.
+        </p>
+    </section>
+
+    <footer>
+        <div id="social-links">
+            <a href="/twitter" class="social-link" title="Twitter">
+                <i class="uim uim-twitter"></i>
+            </a>
+            <a href="/github" class="social-link" title="GitHub">
+                <i class="uim uim-github"></i>
+            </a>
+            <a href="/medium" class="social-link" title="Medium">
+                <i class="uim uim-medium-m"></i>
+            </a>
+            <a href="/key.txt" class="social-link" title="PGP Key">
+                <i class="uim uim-key-skeleton"></i>
+            </a>
         </div>
 
-        <header>
-            <a
-                href="javascript:void(0);"
-                id="header-toggle"
-                onclick="toggleHeaderLinks()"
-            >
-                <i class="uim uim-bars"></i>
-            </a>
-
-            <div id="header-links">
-                <a href="/" class="header-link">Home</a>
-                <a href="/blog" class="header-link">Blog</a>
-                <a href="/crypto" class="header-link">Crypto</a>
-                <a href="/contact" class="header-link">Contact</a>
-            </div>
-        </header>
-
-        <section id="intro">
-            <p class="heading">Hey! I'm&nbsp;Ben.</p>
-            <p class="subheading">
-                A <span id="age">15</span>-year-old who loves to code
-            </p>
-        </section>
-
-        <section class="container">
-            <h1 class="section-heading">About Me</h1>
-
-            <p class="content">
-                Hey there! My name is Ben Soyka, and I'm a high school student
-                who loves to code, write, take photos, and more. I love
-                exploring what the Internet has to offer and learning new
-                skills.
-            </p>
-            <p class="content">
-                I love programming, especially with Python and HTML. In fact, I
-                made this website from scratch &mdash; the
-                <a href="https://github.com/bsoyka/website" target="_blank"
-                    >source code</a
-                >
-                is on GitHub!
-            </p>
-            <p class="content">
-                You'll find me especially active on
-                <a href="/github" target="_blank">GitHub</a>,
-                <a href="/medium" target="_blank">Medium</a>, and
-                <a href="/unsplash" target="_blank">Unsplash.</a>
-            </p>
-        </section>
-
-        <section class="container">
-            <h1 class="section-heading">Newsletter</h1>
-
-            <p class="content">
-                You can join my email newsletter at
-                <a href="/news">news.bsoyka.me</a> to stay up-to-date on what
-                I'm doing across the Internet.
-            </p>
-        </section>
-
-        <footer>
-            <div id="social-links">
-                <a href="/twitter" class="social-link" title="Twitter">
-                    <i class="uim uim-twitter"></i>
-                </a>
-                <a href="/github" class="social-link" title="GitHub">
-                    <i class="uim uim-github"></i>
-                </a>
-                <a href="/medium" class="social-link" title="Medium">
-                    <i class="uim uim-medium-m"></i>
-                </a>
-                <a href="/key.txt" class="social-link" title="PGP Key">
-                    <i class="uim uim-key-skeleton"></i>
-                </a>
-            </div>
-
-            &copy;
-            <script>
-                document.write(new Date().getFullYear()); // Current year
-            </script>
-            Ben Soyka, All Rights Reserved
-            <br />
-            <a href="/privacy">Privacy Policy</a>
-        </footer>
-
+        &copy;
         <script>
-            function getAge(dateString) {
-                // CC-BY-SA 3.0, naveen, https://stackoverflow.com/a/7091965/9549259
-                var today = new Date();
-                var birthDate = new Date(dateString);
-                var age = today.getFullYear() - birthDate.getFullYear();
-                var m = today.getMonth() - birthDate.getMonth();
-                if (
-                    m < 0 ||
-                    (m === 0 && today.getDate() < birthDate.getDate())
-                ) {
-                    age--;
-                }
-                return age;
-            }
-
-            document.addEventListener("DOMContentLoaded", function (event) {
-                var age = getAge("June 24, 2006");
-                document.getElementById("age").innerHTML = age;
-            });
-
-            function toggleHeaderLinks() {
-                var toggle = document.getElementById("header-toggle");
-                var links = document.getElementById("header-links");
-                if (links.style.opacity == 0) {
-                    links.style.opacity = "1";
-                    links.style.height = "auto";
-                    links.style.transform = "scaleY(1)";
-
-                    toggle.style.transform = "rotate(180deg)";
-                } else {
-                    links.style.opacity = "0";
-                    links.style.height = "0";
-                    links.style.transform = "scaleY(0)";
-
-                    toggle.style.transform = "";
-                }
-            }
+            document.write(new Date().getFullYear()); // Current year
         </script>
+        Ben Soyka, All Rights Reserved
+        <br />
+        <a href="/privacy">Privacy Policy</a>
+    </footer>
 
-        <!-- Cloudflare -->
-        <script
-            defer
-            data-cead
-            data-src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'
-        ></script>
+    <script>
+        function getAge(dateString) {
+            // CC-BY-SA 3.0, naveen, https://stackoverflow.com/a/7091965/9549259
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (
+                m < 0 ||
+                (m === 0 && today.getDate() < birthDate.getDate())
+            ) {
+                age--;
+            }
+            return age;
+        }
 
-        <script src="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/browser.js"></script>
-    </body>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var age = getAge("June 24, 2006");
+            document.getElementById("age").innerHTML = age;
+        });
+
+        function toggleHeaderLinks() {
+            var toggle = document.getElementById("header-toggle");
+            var links = document.getElementById("header-links");
+            if (links.style.opacity == 0) {
+                links.style.opacity = "1";
+                links.style.height = "auto";
+                links.style.transform = "scaleY(1)";
+
+                toggle.style.transform = "rotate(180deg)";
+            } else {
+                links.style.opacity = "0";
+                links.style.height = "0";
+                links.style.transform = "scaleY(0)";
+
+                toggle.style.transform = "";
+            }
+        }
+    </script>
+
+    <!-- Cloudflare -->
+    <script defer data-cead data-src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/browser.js"></script>
+</body>
+
 </html>

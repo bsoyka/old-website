@@ -8,6 +8,8 @@ $accent-2: #fec4a9;
 $accent-3: #d3b9f8;
 $accent-4: #b9d4ff;
 
+$waves-max-width: 1600px;
+
 * {
     margin: 0;
     padding: 0;
@@ -149,6 +151,26 @@ header {
     .subheading {
         font-size: 1.7rem;
         color: $accent-2;
+    }
+}
+
+#waves-container {
+    width: 100%;
+    overflow: hidden;
+
+    max-width: $waves-max-width;
+
+    @media (min-width: $waves-max-width) {
+        margin: 0 auto;
+    }
+
+    svg {
+        width: 100%;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            width: 350%;
+        }
     }
 }
 
