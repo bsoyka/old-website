@@ -17,7 +17,6 @@ $waves-max-width: 1600px;
 
 body {
     font-family: $main-font-family;
-    font-size: 1.3em;
     line-height: 1.5;
     background-color: $background-color;
     color: $color;
@@ -45,11 +44,12 @@ a {
 }
 
 .content {
-    line-height: 1.6;
+    font-size: 1.25em;
+    line-height: 1.6em;
     margin-bottom: 0.9em;
 
     @media (max-width: 768px) {
-        font-size: 75%;
+        font-size: 1em;
     }
 }
 
@@ -147,11 +147,19 @@ header {
         color: $accent-1;
 
         margin-bottom: 0.07em;
+
+        @media (max-width: 768px) {
+            font-size: 3em;
+        }
     }
 
     .subheading {
         font-size: 1.7rem;
         color: $accent-2;
+
+        @media (max-width: 768px) {
+            font-size: 1.35em;
+        }
     }
 }
 
@@ -171,6 +179,110 @@ header {
 
         @media (max-width: 768px) {
             width: 350%;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+#newsletter-form {
+    margin-bottom: 0.9em;
+
+    .input-group {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+        width: 75%;
+        max-width: 450px;
+
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 0.5em 1em;
+
+        background-color: rgba(57, 63, 84, 0.8);
+
+        &:after {
+            content: "";
+
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+
+            z-index: 999;
+
+            height: 2px;
+
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+
+            background-position: 0% 0%;
+
+            background: linear-gradient(
+                to right,
+                $accent-1,
+                $accent-2,
+                $accent-3,
+                $accent-4,
+                $accent-3,
+                $accent-2,
+                $accent-1
+            );
+
+            background-size: 500% auto;
+
+            animation: gradient 3s linear infinite;
+        }
+
+        input {
+            border-style: none;
+            background: transparent;
+            outline: none;
+
+            width: 80%;
+
+            flex-grow: 1;
+            color: white;
+            font-size: 1.2em;
+            vertical-align: middle;
+
+            font-family: $main-font-family;
+            font-weight: 600;
+
+            @media (max-width: 768px) {
+                font-size: 0.9em;
+            }
+
+            &::-webkit-input-placeholder {
+                color: mix(white, $background-color);
+            }
+        }
+
+        button {
+            padding: 0;
+            background: none;
+            border: none;
+            outline: none;
+
+            color: mix(white, $background-color);
+            font-size: 1.8em;
+            vertical-align: middle;
+            transition: color 0.25s;
+
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
