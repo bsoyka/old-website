@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<section class="container post">
+    <h1 class="section-heading">{{ page.title }}</h1>
+    <p class="subheading centered">{{ page.date | date_to_string }}</p>
+
+    {{ content }}
+</section>
+
+<section class="container">
+    <noscript>
+        Please enable JavaScript to view the <a
+            href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a>
+    </noscript>
+
+    <div id="disqus_thread"></div>
+</section>
+
+<section class="container">
+    <h2>Suggested Posts</h2>
+    <ul class="related-posts">
+        {% for post in site.related_posts limit:3 %}
+        <li>
+            <h3>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                    <small>{{ post.date | date_to_string }}</small>
+                </a>
+            </h3>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = "{{ site.disqus.url }}{{ page.url }}";
+        this.page.identifier = "{{ page.id }}";
+    };
+
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>

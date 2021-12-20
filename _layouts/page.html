@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<section class="container">
+    {% unless site.hidetitle %}
+    <h1 class="section-heading">{{ page.title }}</h1>
+    {% endunless %}
+</section>
+
+{{ content }}

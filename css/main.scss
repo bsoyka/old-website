@@ -1,3 +1,6 @@
+---
+---
+
 $main-font-family: Montserrat, sans-serif;
 $heading-font-family: Eczar, serif;
 
@@ -53,7 +56,7 @@ a {
     }
 }
 
-.section-heading {
+h1 {
     font-family: $heading-font-family;
     font-size: 2.7rem;
 
@@ -65,8 +68,23 @@ a {
     color: mix($background-color, $color);
 }
 
-pre.wrap {
-    white-space: pre-wrap;
+.dim2 {
+    color: mix($background-color, $color, 35%);
+}
+
+blockquote {
+    padding-left: 1em;
+}
+
+pre {
+    font-family: "PT Mono", "Courier New", Courier, monospace;
+    background-color: #212229;
+    border-radius: 0.5em;
+    padding: 1em;
+
+    &.wrap {
+        white-space: pre-wrap;
+    }
 }
 
 header {
@@ -126,8 +144,30 @@ header {
                 color: lighten($accent-3, 20%);
                 text-shadow: 0 0 1.5rem white;
             }
+
+            &-active {
+                color: lighten($accent-3, 15%);
+                text-shadow: 0 0 0.5rem #dddddd;
+            }
         }
     }
+}
+
+.subheading {
+    font-size: 1.7rem;
+    color: $accent-2;
+
+    @media (max-width: 768px) {
+        font-size: 1.35em;
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.post p {
+    @extend .content;
 }
 
 #intro {
@@ -150,15 +190,6 @@ header {
 
         @media (max-width: 768px) {
             font-size: 3em;
-        }
-    }
-
-    .subheading {
-        font-size: 1.7rem;
-        color: $accent-2;
-
-        @media (max-width: 768px) {
-            font-size: 1.35em;
         }
     }
 }

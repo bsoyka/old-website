@@ -1,0 +1,42 @@
+highlighter: pygments
+
+title: "Ben Soyka"
+tagline: "A high school student who loves to code, write, take photos, and more"
+description: "A high school student who loves to code, write, take photos, and more"
+url: https://bsoyka.me
+baseurl: /
+
+plugins:
+    - jekyll-feed
+    - jekyll-paginate
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jemoji
+
+author:
+    name: "Ben Soyka"
+    url: https://bsoyka.me
+
+twitter_username: bsoyka3
+github_username: bsoyka
+
+disqus:
+    url: https://bsoyka.me
+    shortname: bsoyka
+
+defaults:
+    - scope:
+          path: "blog/_posts"
+      values:
+          layout: post
+
+paginate: 5
+
+sass:
+    style: compressed
+
+compress_html:
+    clippings: all
+
+github:
+    repo: https://github.com/bsoyka/website

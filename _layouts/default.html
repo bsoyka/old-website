@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <div class="cead" role="region" aria-label="Cookie consent">
+        <p>
+            Hey! Could I please enable some services and cookies to improve
+            your experience and my website?
+        </p>
+        <div class="cead__btns">
+            <button class="cead__btn cead__btn--decline">
+                No, thanks.
+            </button>
+            <button class="cead__btn cead__btn--accept">Sure!</button>
+        </div>
+    </div>
+
+    {% include navbar.html %}
+
+    {{ content }}
+
+    <footer>
+        <div id="social-links">
+            <a href="/twitter" class="social-link" title="Twitter">
+                <i class="uim uim-twitter"></i>
+            </a>
+            <a href="/github" class="social-link" title="GitHub">
+                <i class="uim uim-github"></i>
+            </a>
+            <a href="/medium" class="social-link" title="Medium">
+                <i class="uim uim-medium-m"></i>
+            </a>
+            <a href="/key.txt" class="social-link" title="PGP Key">
+                <i class="uim uim-key-skeleton"></i>
+            </a>
+        </div>
+
+        &copy; {{ site.time | date: '%Y' }} Ben Soyka, All Rights Reserved
+        <br />
+        <a href="/privacy">Privacy Policy</a>
+    </footer>
+
+    <script>
+        function getAge(dateString) {
+            // CC-BY-SA 3.0, naveen, https://stackoverflow.com/a/7091965/9549259
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (
+                m < 0 ||
+                (m === 0 && today.getDate() < birthDate.getDate())
+            ) {
+                age--;
+            }
+            return age;
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var age = getAge("June 24, 2006");
+            document.getElementById("age").innerHTML = age;
+        });
+
+        function toggleHeaderLinks() {
+            var toggle = document.getElementById("header-toggle");
+            var links = document.getElementById("header-links");
+            if (links.style.opacity == 0) {
+                links.style.opacity = "1";
+                links.style.height = "auto";
+                links.style.transform = "scaleY(1)";
+
+                toggle.style.transform = "rotate(180deg)";
+            } else {
+                links.style.opacity = "0";
+                links.style.height = "0";
+                links.style.transform = "scaleY(0)";
+
+                toggle.style.transform = "";
+            }
+        }
+    </script>
+
+    <!-- Cloudflare -->
+    <script defer data-cead
+        data-src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/browser.js"></script>
+</body>
+
+</html>

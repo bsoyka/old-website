@@ -1,0 +1,49 @@
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+{% if fullurl == page.url %}
+{% assign current_page = fullurl %}
+{% break %}
+{% elsif page.url contains fullurl %}
+{% assign current_page = fullurl %}
+{% endif %}
+{% endfor %}
+
+<header>
+    <a href="javascript:void(0);" id="header-toggle"
+        onclick="toggleHeaderLinks()">
+        <i class="uim uim-bars"></i>
+    </a>
+
+    <div id="header-links">
+        {% for entry in site.data.navigation %}
+        {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+        {% if fullurl == current_page %}
+        {% assign current = " header-link-active" %}
+        {% else %}
+        {% assign current = null %}
+        {% endif %}
+        <a href="{{ site.baseurl }}{{ entry.url }}"
+            class="header-link{{ current }}">{{ entry.title }}</a>
+        {% endfor %}
+    </div>
+</header>
+
+<script>
+    function toggleHeaderLinks() {
+        var toggle = document.getElementById("header-toggle");
+        var links = document.getElementById("header-links");
+        if (links.style.opacity == 0) {
+            links.style.opacity = "1";
+            links.style.height = "auto";
+            links.style.transform = "scaleY(1)";
+
+            toggle.style.transform = "rotate(180deg)";
+        } else {
+            links.style.opacity = "0";
+            links.style.height = "0";
+            links.style.transform = "scaleY(0)";
+
+            toggle.style.transform = "";
+        }
+    }
+</script>
