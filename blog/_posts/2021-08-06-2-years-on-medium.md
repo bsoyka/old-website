@@ -1,8 +1,8 @@
 ---
 title: Celebrating 2 Years on Medium
 redirect_from:
-  - /celebrating-2-years-on-medium-4f8a0fd2f4d0
-  - /p/4f8a0fd2f4d0
+  - /blog/celebrating-2-years-on-medium-4f8a0fd2f4d0
+  - /blog/p/4f8a0fd2f4d0
 excerpt:
   It's been two years since I joined Medium! Here's a quick recap of my journey,
   some stats, and a handful of special people I'd like to thank.

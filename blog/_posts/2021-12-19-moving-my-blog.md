@@ -1,5 +1,8 @@
 ---
 title: Moving My Blog to Jekyll
+redirect_from:
+  - /blog/moving-my-blog-to-jekyll-13c7fceefb31
+  - /blog/p/13c7fceefb31
 excerpt:
   My blog has switched to a custom website! See why I'm switching to Jekyll.
 ---

@@ -1,8 +1,8 @@
 ---
 title: My New Privacy Policy
 redirect_from:
-  - /my-new-privacy-policy-4dbe1f1a64b8
-  - /p/4dbe1f1a64b8
+  - /blog/my-new-privacy-policy-4dbe1f1a64b8
+  - /blog/p/4dbe1f1a64b8
 excerpt:
   Even though I'm no big company, I have a privacy policy now! Here's why and
   where you can find it.
