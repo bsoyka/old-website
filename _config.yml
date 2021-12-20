@@ -20,6 +20,11 @@ author:
 twitter_username: bsoyka3
 github_username: bsoyka
 
+collections:
+    redirects:
+        output: true
+        permalink: /:path/
+
 disqus:
     url: https://bsoyka.me
     shortname: bsoyka
