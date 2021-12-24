@@ -4,19 +4,6 @@
 {% include head.html %}
 
 <body>
-    <div class="cead" role="region" aria-label="Cookie consent">
-        <p>
-            Hey! Could I please enable some services and cookies to improve
-            your experience and my website?
-        </p>
-        <div class="cead__btns">
-            <button class="cead__btn cead__btn--decline">
-                No, thanks.
-            </button>
-            <button class="cead__btn cead__btn--accept">Sure!</button>
-        </div>
-    </div>
-
     {% include navbar.html %}
 
     {{ content }}
@@ -83,12 +70,8 @@
     </script>
 
     <!-- Cloudflare -->
-    <script defer data-cead
-        data-src="https://static.cloudflareinsights.com/beacon.min.js"
+    <script defer data-src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"token": "4d97af7bd6a74d1fadf21e2ef3b02569"}'></script>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/cead-consent@1/dist/browser.js"></script>
 </body>
 
 </html>
