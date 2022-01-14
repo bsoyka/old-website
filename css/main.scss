@@ -1,8 +1,9 @@
 ---
 ---
 
-$main-font-family: Montserrat, sans-serif;
-$heading-font-family: Eczar, serif;
+$main-font-family: apparat-light, Montserrat, sans-serif;
+$heading-font-family: kansasnew, serif;
+$code-font-family: click-clack, "Courier New", Courier, monospace, serif;
 
 $background-color: #2a2b34;
 $color: white;
@@ -37,12 +38,18 @@ body {
 
 a {
     color: $accent-4;
-    font-weight: 600;
+
+    font-family: apparat, $main-font-family;
+    font-weight: 400;
 
     transition: color 0.2s ease-in-out;
 
     &:hover {
         color: lighten($accent-4, 20%);
+    }
+
+    &.title-link {
+        font-weight: 600;
     }
 }
 
@@ -58,9 +65,19 @@ a {
 
 h1 {
     font-family: $heading-font-family;
+    font-weight: 700;
     font-size: 2.7rem;
 
     color: $accent-3;
+    text-align: center;
+}
+
+h2 {
+    font-family: $heading-font-family;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: $accent-2;
     text-align: center;
 }
 
@@ -77,13 +94,19 @@ blockquote {
 }
 
 pre {
-    font-family: "PT Mono", "Courier New", Courier, monospace;
+    font-family: $code-font-family;
+    font-weight: 400;
+
     background-color: #212229;
     border-radius: 0.5em;
     padding: 1em;
 
     &.wrap {
         white-space: pre-wrap;
+    }
+
+    .dim {
+        font-weight: 300;
     }
 }
 
@@ -130,11 +153,13 @@ header {
         }
 
         .header-link {
-            font-size: 1rem;
             color: $accent-3;
             text-decoration: none;
             text-transform: uppercase;
-            font-weight: 700;
+
+            font-size: 1rem;
+            font-family: kansasnew, sans-serif;
+            font-weight: 900;
 
             padding: 0.9em 1.5em;
 
@@ -154,6 +179,9 @@ header {
 }
 
 .subheading {
+    font-family: new-spirit, $main-font-family;
+    font-weight: 500;
+
     font-size: 1.7rem;
     color: $accent-2;
 
@@ -181,6 +209,7 @@ header {
 
     .heading {
         font-family: $heading-font-family;
+        font-weight: 800;
         font-size: 5rem;
         line-height: 1.15;
 
